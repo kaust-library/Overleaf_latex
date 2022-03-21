@@ -6,4 +6,9 @@ The goal of this training is Overleaf, the LaTeX part will be very basic.
 
 ## Article
 
-How to create your first article. 
+To create your first article, go to the KAUST page in overleaf
+
+```
+https://www.overleaf.com/edu/kaust
+```
+
