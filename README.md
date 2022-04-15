@@ -10,4 +10,23 @@ To create your first article, go to the [KAUST portal](https://www.overleaf.com/
 
 ![KAUST porta](img/overleaf_kaust_portal_medium.png)
 
-You can go to the _Quick Start_ or _Templates_ pages. On the _Quick Start_ there is a simple article with the basic LaTeX. 
+You can go to the _Quick Start_ or _Templates_ pages. The _Templates_ include the official KAUST thesis template, so it's a good idea to have a look, and familiarize yourself with the document. On the _Quick Start_ there is a simple article (or _paper_ as Overleaf call it) with the basic LaTeX.
+
+## Exercises
+
+### Articles
+
+On the _Quick Start_ tab of KAUST portal, click on the "Create a new paper." Enter your KAUST credentials, and you will be presented with your first article. The kind of document is define at the very beginning of the document
+
+```
+\documentclass[a4paper]{article}
+```
+
+The `a4paper` defines the size of the page. There are several [sizes available](https://www.overleaf.com/learn/latex/Page_size_and_margins): a3paper, a4paper, a5paper, letterpaper, executivepaper, legalpaper, etc.
+
+>Note:\
+> Overleaf used this size European \LaTeX{} distribution with default paper size to `a4paper` whereas, the default for \LaTeX{} is the american size `letter`.
+
+
+The `documentclass` defines the type of document: article, book, letter, etc.
+
