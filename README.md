@@ -24,11 +24,10 @@ On the _Quick Start_ tab of KAUST portal, click on the "Create a new paper." Ent
 
 The `a4paper` defines the size of the page. There are several [sizes available](https://www.overleaf.com/learn/latex/Page_size_and_margins): a3paper, a4paper, a5paper, letterpaper, executivepaper, legalpaper, etc.
 
-Try to remove the `a4paper` to change to `US letter`.
-
 >Note:\
 > Overleaf uses European \LaTeX{} distribution with default paper size to `a4paper` whereas, the default for \LaTeX{} is the US size `letter`.
 
+Try to remove the `a4paper` to change to `US letter`.
 
 The `documentclass` defines the type of document: article, book, letter, etc.
 
