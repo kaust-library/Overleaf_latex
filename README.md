@@ -39,5 +39,3 @@ Next comes the _preamble_ where you add your packages with `usepackage.` For exa
 \usepackage[utf8x]{inputenc}
 \usepackage[T1]{fontenc}
 ```
-
-Try to change the language from English to German, and see what changes on the document.
