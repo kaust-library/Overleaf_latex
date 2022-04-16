@@ -24,9 +24,21 @@ On the _Quick Start_ tab of KAUST portal, click on the "Create a new paper." Ent
 
 The `a4paper` defines the size of the page. There are several [sizes available](https://www.overleaf.com/learn/latex/Page_size_and_margins): a3paper, a4paper, a5paper, letterpaper, executivepaper, legalpaper, etc.
 
+Try to remove the `a4paper` to change to `US letter`.
+
 >Note:\
 > Overleaf uses European \LaTeX{} distribution with default paper size to `a4paper` whereas, the default for \LaTeX{} is the US size `letter`.
 
 
 The `documentclass` defines the type of document: article, book, letter, etc.
 
+Next comes the _preamble_ where you add your packages with `usepackage.` For example, the following packages for chactere encoding:
+
+```
+%% Language and font encodings
+\usepackage[english]{babel}
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+```
+
+Try to change the language from English to German, or even Arabic and see what changes on the document.
