@@ -40,4 +40,4 @@ Next comes the _preamble_ where you add your packages with `usepackage.` For exa
 \usepackage[T1]{fontenc}
 ```
 
-Try to change the language from English to German, or even Arabic and see what changes on the document.
+Try to change the language from English to German, and see what changes on the document.
