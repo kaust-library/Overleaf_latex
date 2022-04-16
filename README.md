@@ -31,7 +31,7 @@ Try to remove the `a4paper` to change to `US letter`.
 
 The `documentclass` defines the type of document: article, book, letter, etc.
 
-Next comes the _preamble_ where you add your packages with `usepackage.` For example, the following packages for chactere encoding:
+Next comes the _preamble_ where you add your packages with `usepackage.` For example, the following packages set the environment to use English. It's possible to change to other languages like [German](https://www.overleaf.com/learn/latex/German),  or [Arabic](https://www.overleaf.com/learn/latex/Arabichttps://www.overleaf.com/learn/latex/Arabic), and [many others](https://www.overleaf.com/learn/latex/International_language_support).
 
 ```
 %% Language and font encodings
