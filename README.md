@@ -4,7 +4,7 @@ Or how to learn basic LaTeX with Overleaf in 30 minutes.
 
 ## Overleaf Login
 
-Overveaf login page
+[Overveaf login page](https://www.overleaf.com)
 
 <img src="img/overleaf_login.png" alt="Overleaf login page" width="600"/>
 
