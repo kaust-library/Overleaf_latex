@@ -2,6 +2,16 @@
 
 Or how to learn basic LaTeX with Overleaf in 30 minutes.
 
+## Overleaf Login
+
+Overveaf login page
+
+<img src="img/overleaf_login.png" alt="Overleaf login page" width="600"/>
+
+Next use the option to "Log in through your institution" to login using your KAUST credentials
+
+<img src="img/overleaf_login_institution.png" alt="Login via institution" width="600"/>
+
 ## KAUST Portal
 
 To create your first article, go to the [KAUST portal](https://www.overleaf.com/edu/kaust) in Overleaf
