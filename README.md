@@ -18,6 +18,7 @@ Once you login, you can create a new blank project
 
 <img src="img/overleaf_new_project_2.png" alt="New Blank Project" width="600"/>
 
+Notice that there are several options, of templates, including the KAUST templates with official thesis and dissertation template.
 
 ## KAUST Portal
 
