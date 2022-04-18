@@ -16,7 +16,7 @@ Next use the option to "Log in through your institution" to login using your KAU
 
 Once you login, you can create a new blank project
 
-<img src="img/overleaf_new_project_2" alt="New Blank Project" width="600"/>
+<img src="img/overleaf_new_project_2.png" alt="New Blank Project" width="600"/>
 
 
 ## KAUST Portal
