@@ -1,8 +1,6 @@
-# Overleaf and Latex
+# Learning Latex with Overleaf
 
-This is a supporting material for the slides. Here you will find the examples for training.
-
-The goal of this training is Overleaf, the LaTeX part will be very basic.
+Or how to learn basic LaTeX with Overleaf in 30 minutes.
 
 ## KAUST Portal
 
