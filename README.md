@@ -26,6 +26,30 @@ After choosing the blank template, Overleaf will ask for a name for your project
 
 ![Blank template](img/overleaf_template_blank_article.png)
 
+Try to compile the text, and have a look at the PDF file.
+
+### The Preamble
+
+Everything that comes before the `\begin{document}` is the _preamble_. The preamble starts by defining what kind of document we are doing, via the `documentclass` clause. There are several kinds of document: article, book, letter, etc. It's also possible to define the paper size of the document. The default is US letter, but it's possible to change to A4 paper size, [among others](https://www.overleaf.com/learn/latex/Page_size_and_margins). 
+
+Next comes the list of packages that the text will use. In this case we are defining only the _encoding_, and `utf8` is the recommended. Unless a very specific need, don't remove the line.
+
+Next comes the title, the author(s) and the date. There isn't much to write about the title, but the others deserver some attention. 
+
+How to add a second (or third author)? One could simply list the authors like
+
+```
+\author{Athos, Aramis, and Porthos}
+```
+
+It will work, but a better approach is to use the `\and` clause
+
+```
+\author{Athos \and Aramis \and Porthos}
+```
+
+Try for yourself by compiling the text.
+
 ## KAUST Portal
 
 To create your first article, go to the [KAUST portal](https://www.overleaf.com/edu/kaust) in Overleaf
