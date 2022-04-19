@@ -18,7 +18,13 @@ Once you login, you can create a new blank project
 
 <img src="img/overleaf_new_project_2.png" alt="New Blank Project" width="600"/>
 
-Notice that there are several options, of templates, including the KAUST templates with official thesis and dissertation template.
+Notice that there are several options of templates, including the official KAUST templates for thesis and dissertation template. There are options for letters, books, CV/Resume, and others.
+
+We will start with the blank template, and we will add content to our article.
+
+After choosing the blank template, Overleaf will ask for a name for your project. You can give any meaninful name, like _my first article_. And your new article should looks like the following picture
+
+![Blank template](img/overleaf_template_blank_article.png)
 
 ## KAUST Portal
 
