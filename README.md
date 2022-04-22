@@ -50,6 +50,22 @@ It will work, but a better approach is to use the `\and` clause
 
 Try for yourself by compiling the text.
 
+### Bold, italics and underlining
+
+To emphasize text in \LaTeX{} use the formatting commands: `\textbf{...}`, `\textit{...}`, and `\underline{...}.` Add the following text to your article
+
+```LaTeX
+
+\section{Text Formatting}
+
+This text is in \textbf{bold}, and this is in \textit{italic}, and this one has \underline{underline.}
+
+```
+
+
+
+---
+
 ## KAUST Portal
 
 To create your first article, go to the [KAUST portal](https://www.overleaf.com/edu/kaust) in Overleaf
