@@ -71,6 +71,7 @@ If don't include the `\date`, the document will have the date of the compilation
 ```LaTeX
 \date{}   % For no date
 \date{1st January 2000} 
+\date{\today} % To explicity set to the date of compilation.
 ```
 
 ### Bold, italics and underlining
