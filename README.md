@@ -127,6 +127,23 @@ Here we also [set the width of the picture](https://www.overleaf.com/learn/latex
 \includegraphics[width=5cm, height=4cm]{bombetoka_aster_23aug00_lrg.jpg} % setting size of picture
 ```
 
+### Label, and Caption
+
+Now that we have picture in our document, we can add a caption, and a label. The label will allow us to reference the picture in the text. 
+
+We will set a environment for the picture so we can add the extra configuration
+
+```LaTeX
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{bombetoka_aster_23aug00_lrg}
+    \caption{An Otherworldly-Looking Bombetoka Bay, Madagascar}
+    \label{fig:Bombetoka_Bay}
+\end{figure}
+```
+
+Try to swap the pictures see if the reference to the pictures changes.
+
 ---
 
 ## KAUST Portal
