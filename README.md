@@ -32,19 +32,31 @@ Try to compile the text, and have a look at the PDF file.
 
 Everything that comes before the `\begin{document}` is the _preamble_. The preamble starts by defining what kind of document we are doing, via the `documentclass` clause. There are several kinds of document: article, book, letter, etc. It's also possible to define the paper size of the document. The default is US letter, but it's possible to change to A4 paper size, [among others](https://www.overleaf.com/learn/latex/Page_size_and_margins). 
 
+Try to change the paper size to A4
+
+```LaTeX
+\documentclass[a4paper]{article}
+```
+
+You can go one step further, and add font size, like 11pt or 12pt
+
+```LaTeX
+\documentclass[10pt,a4paper]{article}
+```
+
 Next comes the list of packages that the text will use. In this case we are defining only the _encoding_, and `utf8` is the recommended. Unless a very specific need, don't remove the line.
 
 Next comes the title, the author(s) and the date. There isn't much to write about the title, but the others deserver some attention. 
 
 How to add a second (or third author)? One could simply list the authors like
 
-```
+```LaTeX
 \author{Athos, Aramis, and Porthos}
 ```
 
 It will work, but a better approach is to use the `\and` clause
 
-```
+```LaTeX
 \author{Athos \and Aramis \and Porthos}
 ```
 
