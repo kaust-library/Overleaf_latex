@@ -44,7 +44,11 @@ You can go one step further, and add font size, like 11pt or 12pt
 \documentclass[10pt,a4paper]{article}
 ```
 
-Next comes the list of packages that the text will use. In this case we are defining only the _encoding_, and `utf8` is the recommended. Unless a very specific need, don't remove the line.
+Next comes the list of packages that the text will use. In this case we are defining only the _encoding_, and `utf8` is the recommended. Unless a very specific need, don't remove the line. 
+
+```LaTeX
+\usepackage[utf8]{inputenc}
+```
 
 Next comes the title, the author(s) and the date. There isn't much to write about the title, but the others deserver some attention. 
 
@@ -61,6 +65,13 @@ It will work, but a better approach is to use the `\and` clause
 ```
 
 Try for yourself by compiling the text.
+
+If don't include the `\date`, the document will have the date of the compilation, or you can set the date. Finally, if you want to remove the date completely, set an empty date
+
+```LaTeX
+\date{}   % For no date
+\date{1st January 2000} 
+```
 
 ### Bold, italics and underlining
 
