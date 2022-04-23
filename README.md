@@ -86,7 +86,15 @@ This text is in \textbf{bold}, and this is in \textit{italic}, and this one has 
 
 ```
 
+A better approach is to use the `\emph{...}` command. Better in the sense, that it's up to rendering device to choose how to emphasize the text, for example a reader device for sight impaired person. In general `\emph{...}` will render the text in italic.
 
+Try on your text
+
+```LaTeX
+\emph{This text is emphasized, and \emph{we put emphasis inside} a block that is already emphasized!}
+```
+
+Note that we put emphasis on text that is already emphasized.
 
 ---
 
