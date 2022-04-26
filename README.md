@@ -148,16 +148,15 @@ You cloned the Github repository, you can add the following to code to include 2
 %
 % Picture environment start
 %
-
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{bombetoka_aster_23aug00_lrg}
     \caption{An Otherworldly-Looking Bombetoka Bay, Madagascar}
     \label{fig:Bombetoka_Bay}
 \end{figure}
+% Picture environment end
 
 In Fig.~(\ref{fig:Bombetoka_Bay}) we see a picture from a bay in Madagascar, where the salty waters of the Mozambique Channel penetrate inland to join with the freshwater outflow of the Betsiboka River, forming Bombetoka Bay. 
-% Picture environment end
 
 Next we have another beautiful picture from somewhere in planet Earth. In the next picture will have a different number from the previous picture.
 
@@ -170,10 +169,11 @@ Next we have another beautiful picture from somewhere in planet Earth. In the ne
     \caption{The Susquehanna River}
     \label{fig:Susquehanna_River}
 \end{figure}
-
-In Fig.~(\ref{fig:Susquehanna_River}) we see the Susquehanna River cutting through the folds of the Valley-and-Ridge province of the Appalachian Mountains in this photograph taken by the crew of the International Space Station.  
 % Picture environment end
+
+In Fig.~(\ref{fig:Susquehanna_River}) we see the Susquehanna River cutting through the folds of the Valley-and-Ridge province of the Appalachian Mountains in this photograph taken by the crew of the International Space Station.
 ```
+
 You reference your pictures using the command `\ref{}`, with the label that you defined inside the `picture` environment.
 
 
