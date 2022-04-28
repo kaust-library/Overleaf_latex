@@ -230,10 +230,13 @@ Now we present the ``description'' list:
 
 \begin{description}
    \item This is an entry \textit{without} a label.
-   \item[Something short] The Red Sea is a small body of water.
-   \item[Something long] The Red Sea also has extensive shallow shelves, noted for their marine life and corals. The sea is the habitat of over 1,000 invertebrate species and 200 types of soft and hard coral. It is the world's northernmost tropical sea, and has been designated a Global 200 ecoregion. 
+   \item[The Red Sea (short)] The Red Sea is a small body of water.
+   \item[The Red Sea] The Red Sea also has extensive shallow shelves, noted for their marine life and corals. The sea is the habitat of over 1,000 invertebrate species and 200 types of soft and hard coral. It is the world's northernmost tropical sea, and has been designated a Global 200 ecoregion. 
 \end{description}
 ```
+
+[Lists have a lots of options](https://www.overleaf.com/learn/latex/Lists), like changing the bullet or numbering style. 
+
 ---
 
 ## KAUST Portal
