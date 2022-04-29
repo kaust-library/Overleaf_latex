@@ -237,6 +237,40 @@ Now we present the ``description'' list:
 
 [Lists have a lots of options](https://www.overleaf.com/learn/latex/Lists), like changing the bullet or numbering style. 
 
+
+## Equations
+
+Probably the strongest point of LaTeX is the typesetting of mathematics. We are going to introduce a important technique to work on [large projects](https://www.overleaf.com/learn/latex/Management_in_a_large_project): inputing another file into the main project. LaTeX offers two ways to include files: `input` and `include`. The [difference is subtle](https://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include). The `input` command simply will insert the external file just like if you have typed, and you can next multple `input` files. The `include` command makes easier for big projects because it can be used with the `includeonly` command, to just compile specific parts of the document, but you can't nest `include` commands. 
+
+Add a new file to your project, and give it a name, something like `equations.tex`
+
+![Add file to project](img/overleaf_add_file.png)
+
+On the main document, `main.tex`, add the command to include the new file
+
+```LaTeX
+%
+% Include file. Just text, no preamble part. 
+\input{equations.tex}
+```
+
+Now start adding text to `equations.tex` file
+
+```LaTeX
+\section{Equations}
+
+Here we present what is probably the strongest points of \LaTeX{}: mathematical typesetting. 
+
+\subsection{Simple Maths}
+
+In this document we will add equations, and other mathematics stuff. We start with the \emph{in line} mode,  where the equation is directly on the text. 
+
+The very famous Einstein's equation is $E = mc^2$, where $m$ is the mass of the object, and $c$ is the speed of light in the vacuum. You put something a little more interesting in the in line equation, like an integral: $\int \zeta^{2}(x) \, dx$, or a simple fraction: $\frac{1}{x + y}$. 
+
+```
+
+But like figures, if the equation is more complex, it's a good idea to put inside an _equation_ environment. Let's see some examples:
+
 ---
 
 ## KAUST Portal
