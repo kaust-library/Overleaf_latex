@@ -254,6 +254,12 @@ On the main document, `main.tex`, add the command to include the new file
 \input{equations.tex}
 ```
 
+We will take the opportunity to include some AMS (American Mathematical Society) packages:
+
+```LaTeX
+\usepackage{amssymb,amsmath}
+```
+
 Now start adding text to `equations.tex` file
 
 ```LaTeX
@@ -270,6 +276,17 @@ The very famous Einstein's equation is $E = mc^2$, where $m$ is the mass of the 
 ```
 
 But like figures, if the equation is more complex, it's a good idea to put inside an _equation_ environment. Let's see some examples:
+
+```LaTeX
+Consider the following equation
+
+\begin{equation}
+    \int_{a}^{b} f(x)dx = F(a) - F(b)
+    \label{E:CalcFundemental}
+\end{equation}
+
+The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calculus}.
+```
 
 ---
 
