@@ -287,6 +287,60 @@ Consider the following equation
 
 The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calculus}.
 ```
+Note that we can use the `\ref{}` command like we did for pictures to reference the equations by the label.
+
+There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc.
+
+### Aligning Equations
+
+In case presenting how to solve an equation, we would like to beautifuly displayed, like aligning at the equal sign. Or in case of long formulas, it can be necessary to split it in multiple lines. Make sure already have imported the package `amsmath` in your main document.
+
+Start a new subsection on your document
+
+```LaTeX
+\subsection{Aligning Equations}
+
+Aligning formulas and multi line equations.
+```
+
+Add the following equation to your `equations.tex` document, and compile it.
+
+```LaTeX
+\begin{equation}
+\begin{split}
+A & = \frac{\pi r^2}{2} \\
+ & = \frac{1}{2} \pi r^2
+\end{split}
+\label{eq1}
+\end{equation}
+```
+
+You will see that the equation is aligned by the equal sign. If you prefer to omit the equation number, you can do it by adding an asterisk (*) after the equation (at the beginning and the end), like this
+
+```LaTeX
+\begin{equation*}
+(...)
+\end{equation*}
+```
+
+But keep in mind that this will not reset the counter, and following equations will count will have a "gap" in the numbering, which can be confusing. If you just want to present an piece of math, use the `\[...\]`
+
+```LaTeX
+\[
+(...)
+\]
+```
+
+Displaying a long equation, the line break mark are the two backslash (`\\`)
+
+```LaTeX
+Dislaying a long equation
+
+\begin{multline}
+    p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
+         - 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
+\end{multline}
+```
 
 ---
 
