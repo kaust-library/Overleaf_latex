@@ -1,0 +1,78 @@
+\subsection{Typing a Big Formula}
+
+How to type a big formula step-by-step. By the end of this example you will have typed the formula:
+
+\[
+    \sum_{i = 1}^{ \left[ \frac{n}{2} \right] }
+    \binom{ x_{i, i + 1}^{i^{2}} }
+        { \left[ \frac{i + 3}{3} \right] }
+    \frac{ \sqrt{ \mu(i)^{ \frac{3}{2}} (i^{2} - 1) } }
+        { \sqrt[3]{\rho(i) - 2} + \sqrt[3]{\rho(i) - 1} }
+\]
+
+Type each step, and compile to double check that there are no mistakes.
+
+\begin{enumerate}
+    \item Start with the $\left[ \frac{n}{2} \right]$\\
+    \begin{verbatim}
+$\left[ \frac{n}{2} \right]$
+    \end{verbatim}
+    \item Now type the sum:\[
+        \sum_{i+1}^{ \left[ \frac{n}{2} \right] }
+    \]\\
+    For the superscript you can copy the formula above (removing the ``\$'')\\
+    \begin{verbatim}
+\sum_{i+1}^{ \left[ \frac{n}{2} \right] }
+    \end{verbatim}
+    \item Next the two formulas in the binomial\[
+        x_{i, i + 1}^{i^{2}} \qquad \left[ \frac{i + 3}{3} \right]
+    \] Type as two separated formulas
+    \begin{verbatim}
+x_{i, i + 1}^{i^{2}} \qquad \left[ \frac{i + 3}{3} \right]
+    \end{verbatim}
+    \item Modify the formula above, by removing the \texttt{qquad}, and adding \texttt{binom} in the beginning
+    \begin{verbatim}
+\binom{ x_{i,i + 1}^{i^{2}} }{ \left[ \frac{i + 3}{3} \right] }
+    \end{verbatim}
+    You will get the binomial formula:
+    \[
+        \binom{ x_{i,i + 1}^{i^{2}} }{ \left[ \frac{i + 3}{3} \right] }
+    \]
+    \item Next type the formula under the square root $\mu(i)^{ \frac{3}{2} } (i^{2} - 1)$ as
+    \begin{verbatim}
+\mu(i)^{ \frac{3}{2} } (i^{2} - 1)
+    \end{verbatim}
+    Then add the square root $\sqrt{ \mu(i)^{ \frac{3}{2} } (i^{2} - 1) }$
+    \begin{verbatim}
+\sqrt{ \mu(i)^{ \frac{3}{2} } (i^{2} - 1) }    
+    \end{verbatim}
+    \item Type the two cubic roots: $\sqrt[3]{ \rho(i) - 2 }$, and $\sqrt[3]{ \rho(i) - 1 }$
+    \begin{verbatim}
+\sqrt[3]{ \rho(i) - 2 }  \sqrt[3]{ \rho(i) - 1 }
+    \end{verbatim}
+    \item Now get the fraction
+    \[
+    \frac{ \sqrt{ \mu(i)^{ \frac{3}{2}} (i^{2} -1) } }
+        { \sqrt[3]{ \rho(i) - 2 }  + \sqrt[3]{ \rho(i) - 1 } }
+    \]
+    \begin{verbatim}
+\frac{ \sqrt{ \mu(i)^{ \frac{3}{2}} (i^{2} -1) } }
+    { \sqrt[3]{ \rho(i) - 2 }  + \sqrt[3]{ \rho(i) - 1 } }
+    \end{verbatim}
+    \item Finally put everything together by copying-and-pasting from the steps above
+    \begin{verbatim}
+    \sum_{i = 1}^{ \left[ \frac{n}{2} \right] }
+    \binom{ x_{i, i + 1}^{i^{2}} }
+        { \left[ \frac{i + 3}{3} \right] }
+    \frac{ \sqrt{ \mu(i)^{ \frac{3}{2}} (i^{2} - 1) } }
+        { \sqrt[3]{\rho(i) - 2} + \sqrt[3]{\rho(i) - 1} }
+    \end{verbatim}
+    To get the complete formula
+    \[
+    \sum_{i = 1}^{ \left[ \frac{n}{2} \right] }
+    \binom{ x_{i, i + 1}^{i^{2}} }
+        { \left[ \frac{i + 3}{3} \right] }
+    \frac{ \sqrt{ \mu(i)^{ \frac{3}{2}} (i^{2} - 1) } }
+        { \sqrt[3]{\rho(i) - 2} + \sqrt[3]{\rho(i) - 1} }
+    \]
+\end{enumerate}
