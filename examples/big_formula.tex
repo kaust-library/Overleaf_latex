@@ -76,3 +76,17 @@ x_{i, i + 1}^{i^{2}} \qquad \left[ \frac{i + 3}{3} \right]
         { \sqrt[3]{\rho(i) - 2} + \sqrt[3]{\rho(i) - 1} }
     \]
 \end{enumerate}
+
+Notice the use of:
+\begin{itemize}
+    \item \emph{spacing} to help distinguish the braces (Overleaf can help balancing the braces).
+    \item Separated lines for each major part of the formula. 
+\end{itemize}
+
+The points are for \emph{your} readability, \LaTeX{} itself doesn't care about spaces, but try to find the error in the formula below
+
+\begin{verbatim}
+\sum_{i=1}^{\left[\frac{n}{2}\right]}\binom{x_{i,i+1}^{i^{2}}}
+{\left[\frac{i+3}{3}\right]}\frac{\sqrtt{\mu(i)^{\frac{3}{2}}(i^{2}-1)}}
+{\sqrt[3]{\rho(i)-2}+\sqrt[3]{\rho(i)-1}}
+\end{verbatim}
