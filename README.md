@@ -342,6 +342,33 @@ Dislaying a long equation
 \end{multline}
 ```
 
+## Tables
+
+Table in LaTeX are provided by the _tabular_ environment. The general format of the is
+
+```LaTeX
+\begin{tabular}[pos]{ table spec }
+```
+
+The `table spec` are the number of columns, and the alignment of the text: `l` for left, `c` for center, and `r` for right. The `pos` is vertical position of the table relative to the baseline of the surrounding text. The options are: `t` for top, `b`, and `c` for center, but you hardly will use `pos` parameters.
+
+
+```LaTeX
+\section{Tables}
+
+Creating a simple table in \LaTeX{} with 3 columns centered
+
+\begin{center}
+\begin{tabular}{ c c c }
+ cell1 & cell2 & cell3 \\ 
+ cell4 & cell5 & cell6 \\  
+ cell7 & cell8 & cell9    
+\end{tabular}
+\end{center}
+```
+
+Next we will add borders to the table. To add boder at the columns, change the `table spec` to 
+
 ---
 
 ## KAUST Portal
