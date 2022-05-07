@@ -367,7 +367,55 @@ Creating a simple table in \LaTeX{} with 3 columns centered
 \end{center}
 ```
 
-Next we will add borders to the table. To add boder at the columns, change the `table spec` to 
+Next we will add borders to the table. To add boder at the columns, change the `table spec` to `\begin{tabular}{ c | c | c }`. Horizontal lines with `hline`. Add border to previous table
+
+```LaTeX
+Adding border to the table, and putting the table inside a proper `table` environment
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c|c|c}
+        \textbf{Col 1}& \textbf{Col 2} & \textbf{Col 3} \\ \hline
+        cell1 & cell2 & cell3 \\ 
+        cell4 & cell5 & cell6 \\  
+        cell7 & cell8 & cell9     
+    \end{tabular}
+    \caption{Table with lines}
+    \label{T:tab1}
+\end{table}
+
+On Tab.~\ref{T:tab1} with have added a line between the header and the data.
+```
+
+The floating environments like pictures and tables have placements options, like `h` or `b`. Something like this
+
+```LaTeX
+\begin{table}[h]
+or
+\begin{figure}[h]
+```
+
+The possible options for the placement are presented on the following table. Note we are setting the size of the column with text
+
+```LaTeX
+Next are placement options for the floating environment (like pictures and tables) in \LaTeX{}
+
+\begin{table}[h]
+    \centering
+    \begin{tabular}{c p{0.6\linewidth} }
+         \textbf{Specifier} &  \textbf{Placement}\\ \hline
+         t & Place the table at the \emph{top} of a text page\\
+         b & Place the table at the \emph{bottom} of a text page\\
+         h & Place the table at the position in the text where the table environment is that is, \emph{here}\\
+         p & Place the table on a separate float page\\
+         ! & Used in addition to the other parameters, it overrides the restrictions of LaTeX over the floats (such as the maximum number of floats on a page) and helps to enforce the chosen parameter\\
+         H & Comes with the ``float'' package, it absolutely forces the table to appear at the position in the text where the table environment is
+    \end{tabular}
+    \caption{Possible placement options for floating environment}
+    \label{T:PosPlace}
+\end{table}
+```
+
 
 ---
 
