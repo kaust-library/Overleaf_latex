@@ -415,14 +415,3 @@ Next are placement options for the floating environment (like pictures and table
     \label{T:PosPlace}
 \end{table}
 ```
-
-
----
-
-## KAUST Portal
-
-To create your first article, go to the [KAUST portal](https://www.overleaf.com/edu/kaust) in Overleaf
-
-![KAUST porta](img/overleaf_kaust_portal_medium.png)
-
-You can go to the _Quick Start_ or _Templates_ pages. The _Templates_ include the official KAUST thesis template, so it's a good idea to have a look, and familiarize yourself with the document. On the _Quick Start_ there is a simple article (or _paper_ as Overleaf call it) with the basic LaTeX.
