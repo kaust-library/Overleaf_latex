@@ -386,14 +386,23 @@ Adding border to the table, and putting the table inside a proper `table` enviro
 
 On Tab.~\ref{T:tab1} with have added a line between the header and the data.
 ```
+Next we consider a table with text, like when the text can be too wide for the column. Try the following example
 
-The floating environments like pictures and tables have placements options, like `h` or `b`. Something like this
+```LaTex
+What about tables with text? Do they need any change or not? Let's see what happen when we try a naive approach
 
-```LaTeX
 \begin{table}[h]
-or
-\begin{figure}[h]
+    \centering
+    \begin{tabular}{c|l}
+         t &  Place the table at the \emph{top} of a text page\\
+         ! & Used in addition to the other parameters, it overrides the restrictions of LaTeX over the floats (such as the maximum number of floats on a page) and helps to enforce the chosen parameter\\
+    \end{tabular}
+    \caption{Table with very wide column}
+    \label{T:col_too_wide}
+\end{table}
 ```
+
+We can see that simply putting text on the table didn't work. So how fix this? The solution is to [use a different type of column](https://texblog.org/2019/06/03/control-the-width-of-table-columns-tabular-in-latex/) that are able to wrap the text. Here we use the `p{width}` option that aligh the text at the top of the cell.
 
 The possible options for the placement are presented on the following table. Note we are setting the size of the column with text
 
