@@ -134,7 +134,7 @@ Now that we have picture in our document, we can add a caption, and a label. The
 We will set a environment for the picture so we can add the extra configuration
 
 ```LaTeX
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth]{bombetoka_aster_23aug00_lrg}
     \caption{An Otherworldly-Looking Bombetoka Bay, Madagascar}
@@ -148,7 +148,7 @@ You cloned the Github repository, you can add the following to code to include 2
 %
 % Picture environment start
 %
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth]{bombetoka_aster_23aug00_lrg}
     \caption{An Otherworldly-Looking Bombetoka Bay, Madagascar}
@@ -163,7 +163,7 @@ Next we have another beautiful picture from somewhere in planet Earth. In the ne
 %
 % Picture environment start
 %
-\begin{figure}[h]
+\begin{figure}[ht]
     \centering
     \includegraphics[width=0.6\textwidth]{Susquehanna_River.jpg}
     \caption{The Susquehanna River}
@@ -372,7 +372,7 @@ Next we will add borders to the table. To add boder at the columns, change the `
 ```LaTeX
 Adding border to the table, and putting the table inside a proper `table` environment
 
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \begin{tabular}{c|c|c}
         \textbf{Col 1}& \textbf{Col 2} & \textbf{Col 3} \\ \hline
@@ -392,7 +392,7 @@ Next we consider a table with text. Try the following example
 ```LaTex
 What about tables with text? Do they need any change or not? Let's see what happen when we try a naive approach
 
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \begin{tabular}{c|l}
          t &  Place the table at the \emph{top} of a text page\\
@@ -410,7 +410,7 @@ The possible options for the placement are presented on the following table. Not
 ```LaTeX
 Next are placement options for the floating environment (like pictures and tables) in \LaTeX{}
 
-\begin{table}[h]
+\begin{table}[ht]
     \centering
     \begin{tabular}{c p{0.6\linewidth} }
          \textbf{Specifier} &  \textbf{Placement}\\ \hline
@@ -425,3 +425,29 @@ Next are placement options for the floating environment (like pictures and table
     \label{T:PosPlace}
 \end{table}
 ```
+
+## Closing
+
+The closing of this training is with two items: table of contents and abstract.
+
+To create a [table of contents](https://www.overleaf.com/learn/latex/Table_of_contents) is very simple, just add the command at the place you want to create your table of contents. In general it will after the command `maketitle`
+
+```LaTeX
+
+To add a table of contents, just add the command 
+
+\tableofcontents
+
+```
+
+Finally the abstract, as a good practice is the last thing we write. The abstract has it's own environment.
+
+```LaTeX
+
+Adding an abstract to our article. 
+
+\begin{abstract}
+    In this brief \LaTeX{} training we covered a lot. We presented the basic elements of an article, lists, tables, equations, etc. On the Github page, we added references to Overleaf documentation so you can explore more in depth material. Finally, \LaTeX{} is a very well established, so you will have no problem finding how to do all sorts of things. As Alan Kay said ``Simple things should be simple, complex things should be possible.'' That is definitely true for \LaTeX{}.
+\end{abstract}
+```
+
