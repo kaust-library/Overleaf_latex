@@ -386,7 +386,8 @@ Adding border to the table, and putting the table inside a proper `table` enviro
 
 On Tab.~\ref{T:tab1} with have added a line between the header and the data.
 ```
-Next we consider a table with text, like when the text can be too wide for the column. Try the following example
+
+Next we consider a table with text. Try the following example
 
 ```LaTex
 What about tables with text? Do they need any change or not? Let's see what happen when we try a naive approach
