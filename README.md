@@ -447,7 +447,7 @@ Finally the abstract, as a good practice is the last thing we write. The abstrac
 Adding an abstract to our article. 
 
 \begin{abstract}
-    In this brief \LaTeX{} training we covered a lot. We presented the basic elements of an article, lists, tables, equations, etc. On the Github page, we added references to Overleaf documentation so you can explore more in depth material. Finally, \LaTeX{} is a very well established, so you will have no problem finding how to do all sorts of things. As Alan Kay said ``Simple things should be simple, complex things should be possible.'' That is definitely true for \LaTeX{}.
+    In this brief \LaTeX{} training we covered a lot. We presented the basic elements of an article, lists, tables, equations, etc. On the Github page, we added references to Overleaf documentation so you can explore more in depth material. Finally, \LaTeX{} is a very well established, so you will have no problem finding how to do all sorts of things. As Alan Kay said ``Simple things should be simple, complex things should be possible.'' That is definitely true for Overleaf and \LaTeX{}.
 \end{abstract}
 ```
 
