@@ -108,7 +108,7 @@ Note that we put emphasis on text that is already emphasized.
 
 ## Images
 
-To add [images to a LaTeX document](https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf) in Overleaf, it's necessary to upload them first. It's recommended to create a folder for the images so they are separated from the regular documents.
+To add [images to a LaTeX document](https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf){:target="_blank"} in Overleaf, it's necessary to upload them first. It's recommended to create a folder for the images so they are separated from the regular documents.
 
 ![Create folder](img/overleaf_create_folder.png)
 
@@ -130,7 +130,7 @@ add the picture to the document
 \includegraphics[width=0.6\textwidth]{bombetoka_aster_23aug00_lrg.jpg}
 ```
 
-Here we also [set the width of the picture](https://www.overleaf.com/learn/latex/Questions/How_do_I_specify_the_size_of_an_image_in_LaTeX?) to be 60% of the text width. There are many ways of [setting the size of a picture](https://www.overleaf.com/learn/latex/Inserting_Images#Changing_the_image_size_and_rotating_the_picture), like with parameter `scale` or explicitly with `width` and `height`. For example,
+Here we also [set the width of the picture](https://www.overleaf.com/learn/latex/Questions/How_do_I_specify_the_size_of_an_image_in_LaTeX?){:target="_blank"} to be 60% of the text width. There are many ways of [setting the size of a picture](https://www.overleaf.com/learn/latex/Inserting_Images#Changing_the_image_size_and_rotating_the_picture){:target="_blank"}, like with parameter `scale` or explicitly with `width` and `height`. For example,
 
 ```LaTeX
 \includegraphics[scale=0.1]{bombetoka_aster_23aug00_lrg.jpg}  % 10% original size.
@@ -245,7 +245,7 @@ Now we present the ``description'' list:
 \end{description}
 ```
 
-[Lists have a lots of options](https://www.overleaf.com/learn/latex/Lists), like changing the bullet or numbering style. 
+[Lists have a lots of options](https://www.overleaf.com/learn/latex/Lists){:target="_blank"}, like changing the bullet or numbering style. 
 
 
 ## Equations
