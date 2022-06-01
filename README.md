@@ -16,7 +16,7 @@ Next use the option to "Log in through your institution" to login using your KAU
 
 Before learning more about Latex, it can be helpful to have an understanding of a Latex document
 
-![Latex Document Structure](img/latex_structure.png)
+<img src="img/latex_structure.png" alt="Latex Document Structure" width="600"/>
 
 ## New Article
 
