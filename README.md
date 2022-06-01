@@ -12,13 +12,15 @@ Next use the option to "Log in through your institution" to login using your KAU
 
 <img src="img/overleaf_login_institution.png" alt="Login via institution" width="600"/>
 
-## Latex Document Structure
+## New Article
 
-Before learning more about Latex, it can be helpful to have an understanding of a Latex document
+### Latex Document Structure
+
+Before learning more about Latex, it can be helpful to have an understanding of a Latex document structure. For example, all packages go in the _preamble_ that will discuss in more details later.
 
 <img src="img/latex_structure.png" alt="Latex Document Structure" width="600"/>
 
-## New Article
+### Starting an Article
 
 Once you login, you can create a new blank project
 
@@ -50,7 +52,7 @@ You can go one step further, and add font size, like 11pt or 12pt
 \documentclass[10pt,a4paper]{article}
 ```
 
-Next comes the list of packages that the text will use. In this case we are defining only the _encoding_, and `utf8` is the recommended. Unless a very specific need, don't remove the line. 
+Next comes the list of packages that the text will use. In this case we are defining only the _encoding_, and `utf8` is the recommended. Unless you have a very specific need, don't remove the line. 
 
 ```LaTeX
 \usepackage[utf8]{inputenc}
