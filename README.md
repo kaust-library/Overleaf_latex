@@ -58,6 +58,8 @@ Next comes the list of packages that the text will use. In this case we are defi
 \usepackage[utf8]{inputenc}
 ```
 
+### Top Matter
+
 Next comes the title, the author(s) and the date. There isn't much to write about the title, but the others deserver some attention. 
 
 How to add a second (or third author)? One could simply list the authors like
@@ -84,7 +86,7 @@ If don't include the `\date`, the document will have the date of the compilation
 
 ### Bold, italics and underlining
 
-To emphasize text in \LaTeX{} use the formatting commands: `\textbf{...}`, `\textit{...}`, and `\underline{...}.` Add the following text to your article
+To emphasize text in LaTeX use the formatting commands: `\textbf{...}`, `\textit{...}`, and `\underline{...}.` Add the following text to your article
 
 ```LaTeX
 
