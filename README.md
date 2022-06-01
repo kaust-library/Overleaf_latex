@@ -12,6 +12,12 @@ Next use the option to "Log in through your institution" to login using your KAU
 
 <img src="img/overleaf_login_institution.png" alt="Login via institution" width="600"/>
 
+## Latex Document Structure
+
+Before learning more about Latex, it can be helpful to have an understanding of a Latex document
+
+![Latex Document Structure](img/latex_structure.png)
+
 ## New Article
 
 Once you login, you can create a new blank project
