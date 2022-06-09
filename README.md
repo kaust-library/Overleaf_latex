@@ -84,6 +84,20 @@ If don't include the `\date`, the document will have the date of the compilation
 \date{\today} % To explicity set to the date of compilation.
 ```
 
+### Sectioning
+
+LaTeX offers several levels of section, although, two of them will be available for _books_ and _reports_ only, and they are `part` and `chapter`. 
+
+```LaTex
+% \part{Part of book or report}
+% \chapter{Chapter in a book or report}
+\section{My section}
+\subsection{My subsection}
+\subsubsection{My subsubsection}
+\paragraph{My paragraph}
+\subparagraph{My subparagraph}
+```
+
 ### Bold, italics and underlining
 
 To emphasize text in LaTeX use the formatting commands: `\textbf{...}`, `\textit{...}`, and `\underline{...}.` Add the following text to your article
