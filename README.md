@@ -86,7 +86,7 @@ If don't include the `\date`, the document will have the date of the compilation
 
 ### Sectioning
 
-LaTeX offers several levels of section, although, two of them will be available for _books_ and _reports_ only, and they are `part` and `chapter`. 
+LaTeX offers [several levels of section](https://www.overleaf.com/learn/latex/Sections_and_chapters), although, two of them will be available for _books_ and _reports_ only, and they are `part` and `chapter`. 
 
 ```LaTex
 % \part{Part of book or report}
@@ -119,6 +119,64 @@ Try on your text
 ```
 
 Note that we put emphasis on text that is already emphasized.
+
+## Lists
+
+LaTeX has 3 kinds of lists: bullet, numbered and description. A list is defined as parameter for the environment `\begin` and `\end`. Let's start by creating a section for our lists
+
+```LaTeX
+%
+% Add a section for lists in your document.
+\section{Lists}
+
+\LaTeX{} has the basic types of lists: bullet and enumerate. They are also known as ``unordered'' or ``ordered''. We will add these two types of list, then we mix them. We finish adding another type of list: description list.
+```
+
+Now add all three kinds of list to your document.
+
+```LaTeX
+A unordered list:
+
+\begin{itemize}
+    \item This is the first item on a bullet list.
+    \item This the second item.
+\end{itemize}
+
+And an ordered list:
+
+\begin{enumerate}
+    \item First item in an enumerate list.
+    \item And the second item.
+\end{enumerate}
+
+Of course you can combine the two types:
+
+\begin{enumerate}
+    \item The ingredients
+    \begin{itemize}
+        \item Eggs
+        \item Milk
+        \item Flour
+    \end{itemize}
+    \item Mix all ingredients in a bowl
+    \item Put in the oven.
+\end{enumerate}
+
+```
+
+To finish, the description list
+
+```LaTeX
+Now we present the ``description'' list:
+
+\begin{description}
+   \item This is an entry \textit{without} a label.
+   \item[The Red Sea (short)] The Red Sea is a small body of water.
+   \item[The Red Sea] The Red Sea also has extensive shallow shelves, noted for their marine life and corals. The sea is the habitat of over 1,000 invertebrate species and 200 types of soft and hard coral. It is the world's northernmost tropical sea, and has been designated a Global 200 ecoregion. 
+\end{description}
+```
+
+[Lists have a lots of options](https://www.overleaf.com/learn/latex/Lists), like changing the bullet or numbering style. 
 
 ## Images
 
@@ -202,65 +260,6 @@ You reference your pictures using the command `\ref{}`, with the label that you 
 
 
 Try to swap the pictures see if the reference to the pictures changes.
-
-## Lists
-
-LaTeX has 3 kinds of lists: bullet, numbered and description. A list is defined as parameter for the environment `\begin` and `\end`. Let's start by creating a section for our lists
-
-```LaTeX
-%
-% Add a section for lists in your document.
-\section{Lists}
-
-\LaTeX{} has the basic types of lists: bullet and enumerate. They are also known as ``unordered'' or ``ordered''. We will add these two types of list, then we mix them. We finish adding another type of list: description list.
-```
-
-Now add all three kinds of list to your document.
-
-```LaTeX
-A unordered list:
-
-\begin{itemize}
-    \item This is the first item on a bullet list.
-    \item This the second item.
-\end{itemize}
-
-And an ordered list:
-
-\begin{enumerate}
-    \item First item in an enumerate list.
-    \item And the second item.
-\end{enumerate}
-
-Of course you can combine the two types:
-
-\begin{enumerate}
-    \item The ingredients
-    \begin{itemize}
-        \item Eggs
-        \item Milk
-        \item Flour
-    \end{itemize}
-    \item Mix all ingredients in a bowl
-    \item Put in the oven.
-\end{enumerate}
-
-```
-
-To finish, the description list
-
-```LaTeX
-Now we present the ``description'' list:
-
-\begin{description}
-   \item This is an entry \textit{without} a label.
-   \item[The Red Sea (short)] The Red Sea is a small body of water.
-   \item[The Red Sea] The Red Sea also has extensive shallow shelves, noted for their marine life and corals. The sea is the habitat of over 1,000 invertebrate species and 200 types of soft and hard coral. It is the world's northernmost tropical sea, and has been designated a Global 200 ecoregion. 
-\end{description}
-```
-
-[Lists have a lots of options](https://www.overleaf.com/learn/latex/Lists), like changing the bullet or numbering style. 
-
 
 ## Equations
 
