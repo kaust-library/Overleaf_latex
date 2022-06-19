@@ -500,7 +500,7 @@ To finish this section, a note about the bibliography style. One can customize t
 ]{biblatex}
 ```
 
-With the _alphabetic_ style, the bibliography will appear as `[Ein05]`, but if we change the style to _numeric_, the bibliography will appear as `[1]`. There are many other customized styles, like Nature, Science, IEEE, etc.
+With the _alphabetic_ style, the bibliography will appear as `[Ein05]`, but if we change the style to _numeric_, the bibliography will appear as `[1]`. There are many other [customized styles](https://www.overleaf.com/learn/latex/Biblatex_citation_styles), like Nature, Science, IEEE, etc.
 
 ## Closing
 
