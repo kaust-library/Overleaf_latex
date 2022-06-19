@@ -448,6 +448,59 @@ Next are placement options for the floating environment (like pictures and table
     \label{T:PosPlace}
 \end{table}
 ```
+## Bibliography
+
+Overleaf has a very good [introduction to bibliography in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX), so here will limit ourselves to a simple introduction. 
+
+1. Import the `biblatex`
+1. Specify the file with the bibliography entries
+1. Add the command `\printbibliography`
+
+On our LaTeX document we would have something like this
+
+```LaTeX
+% In the preamble
+\usepackage{biblatex}
+\addbibresource{hello.bib}
+(...)
+% Your document
+(...)
+% At the very end
+\printbibliography
+```
+
+The entries for your bibliography can be of [several kinds](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX#Reference_guide), like articles, books, thesis, online, and much more. We suggest to put as much as information as possible from the list of available fields, but keep in mind that the final bibliography will depend on the [_bibliography style_](https://www.overleaf.com/learn/latex/Biblatex_bibliography_styles). 
+
+A reference to a book will look like
+
+```LaTeX
+@book{dirac,
+    title = {The Principles of Quantum Mechanics},
+    author = {Paul Adrien Maurice Dirac},
+    isbn = {9780198520115},
+    series = {International series of monographs on physics},
+    year = {1981},
+    publisher = {Clarendon Press},
+    keywords = {physics}
+}
+```
+
+Then, on your text, to make a reference to the Dirac's book: 
+
+```LaTeX
+The book \cite{dirac} is one of the fundamental text of quantum mechanics. 
+```
+
+To finish this section, a note about the bibliography style. One can customize the bibliography together with the package import
+
+```LaTeX
+\usepackage[
+    style=alphabetic,
+    sorting=ynt,
+]{biblatex}
+```
+
+With the _alphabetic_ style, the bibliography will appear as `[Ein05]`, but if we change the style to _numeric_, the bibliography will appear as `[1]`. There are many other customized styles, like Nature, Science, IEEE, etc.
 
 ## Closing
 
