@@ -367,11 +367,18 @@ Dislaying a long equation
 
 ## Typing Code
 
-To type a piece of code, like Python, on your text, you can use the `fancyvrb` package.
+To type a piece of code, like Python, on your text, you can use the `fancyvrb` package. First add the package as usual
 
 ```LaTeX
 \usepackage{fancyvrb}    % Add the package
+```
+
+Then add the piece of code
+
+```LaTeX
 (...)
+% The parameters are optional for the font size and family, and add line numbers
+% on the left side, and frame above and below the code.
 \begin{Verbatim}[fontsize=\small, fontfamily=courier, numbers=left, frame=lines]
 from flask import Flask
 app = Flask(__name__)
