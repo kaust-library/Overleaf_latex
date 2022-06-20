@@ -365,6 +365,22 @@ Dislaying a long equation
 \end{multline}
 ```
 
+## Typing Code
+
+To type a piece of code, like Python, on your text, you can use the `fancyvrb` package.
+
+```LaTeX
+\usepackage{fancyvrb}    % Add the package
+(...)
+\begin{Verbatim}[fontsize=\small, fontfamily=courier, numbers=left, frame=lines]
+from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def home():
+    return 'Flask with docker!'
+\end{Verbatim}
+```
+
 ## Tables
 
 Table in LaTeX are provided by the _tabular_ environment. The general format of the is
