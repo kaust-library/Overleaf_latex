@@ -74,6 +74,22 @@ It will work, but a better approach is to use the `\and` clause
 \author{Athos \and Aramis \and Porthos}
 ```
 
+To add authors affiliation, first add the package to your preamble
+
+```LaTex
+\usepackage{authblk}
+```
+
+Then edit the authors with their affiliation
+
+```LaTeX
+\author[1]{Athos}
+\author[2]{Aramis}
+\author[1]{Porthos}
+\affil[1]{Dumas School}
+\affil[2]{Musketeers Institute}
+```
+
 Try for yourself by compiling the text.
 
 If don't include the `\date`, the document will have the date of the compilation, or you can set the date. Finally, if you want to remove the date completely, set an empty date
