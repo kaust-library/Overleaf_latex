@@ -28,7 +28,7 @@ Once you login, you can create a new blank project
 
 Notice that there are several options of templates, including the official KAUST templates for thesis and dissertation template. There are options for letters, books, CV/Resume, and others.
 
-We will start with the blank template, and we will add content to our article.
+We will start with the _blank template_, and we will add content to our article.
 
 After choosing the blank template, Overleaf will ask for a name for your project. You can give any meaninful name, like _my first article_. And your new article should looks like the following picture
 
@@ -55,7 +55,7 @@ You can go one step further, and add font size, like 11pt or 12pt
 Next comes the list of packages that the text will use. In this case we are defining only the _encoding_, and `utf8` is the recommended. Unless you have a very specific need, don't remove the line. 
 
 ```LaTeX
-\usepackage[utf8]{inputenc}
+\usepackage[utf8]{inputenc}  % !! Don't touch this line !!
 ```
 
 ### Top Matter
@@ -114,14 +114,14 @@ LaTeX offers [several levels of section](https://www.overleaf.com/learn/latex/Se
 \subparagraph{My subparagraph}
 ```
 
+```LaTeX
 Note that you can label a section (like equations, tables, and figures), and reference it later
 
-```LaTeX
-\subsection{Very Important Section} \label{S:very_important}
-This section has some very important results or material for the rest of the document. In this section we find the answer to the ultimate question of life and more.
+\subsection{A Very Important Section} \label{S:very_important}
+This section has some very important results. In this section we find the answer to the ultimate question of life and more.
 
 \subsection{A Section}
-Using the very important results from Sec.~(\ref{S:very_important}) we now can say for sure that the number ``42'' is the answer for ultimate questions of life, universe, and everything.
+Using the results from Sec.~(\ref{S:very_important}) we now can say for sure that the number ``42'' is the answer for ultimate questions of life, universe, and everything.
 ```
 
 ### Bold, italics and underlining
