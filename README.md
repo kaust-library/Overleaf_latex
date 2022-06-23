@@ -114,6 +114,16 @@ LaTeX offers [several levels of section](https://www.overleaf.com/learn/latex/Se
 \subparagraph{My subparagraph}
 ```
 
+Note that you can label a section (like equations, tables, and figures), and reference it later
+
+```LaTeX
+\subsection{Very Important Section} \label{S:very_important}
+This section has some very important results or material for the rest of the document. In this section we find the answer to the ultimate question of life and more.
+
+\subsection{A Section}
+Using the very important results from Sec.~(\ref{S:very_important}) we now can say for sure that the number ``42'' is the answer for ultimate questions of life, universe, and everything.
+```
+
 ### Bold, italics and underlining
 
 To emphasize text in LaTeX use the formatting commands: `\textbf{...}`, `\textit{...}`, and `\underline{...}.` Add the following text to your article
