@@ -349,7 +349,7 @@ The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calcu
 ```
 Note that we can use the `\ref{}` command like we did for pictures to reference the equations by the label.
 
-There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. Finally there is [the great big list of LaTeX symbols](http://mirrors.ctan.org/info/symbols/comprehensive/symbols-a4.pdf) with 400(!) pages of symbols.
+There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. 
 
 ### Aligning Equations
 
@@ -404,7 +404,9 @@ Dislaying a long equation
 
 ## Typing Code
 
-To type a piece of code, like Python, on your text, you can use the `fancyvrb` package. First add the package as usual
+To type a piece of code, like Python, on your text, you can use the [`fancyvrb` package](https://ctan.um.ac.ir/macros/latex/contrib/fancyvrb/doc/fancyvrb-doc.pdf). 
+
+First add the package as usual
 
 ```LaTeX
 \usepackage{fancyvrb}    % Add the package
@@ -512,7 +514,7 @@ Next are placement options for the floating environment (like pictures and table
 
 Overleaf has a very good [introduction to bibliography in LaTeX](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX), so here will limit ourselves to a simple introduction. 
 
-1. Import the `biblatex`
+1. Import the `biblatex` package
 1. Specify the file with the bibliography entries
 1. Add the command `\printbibliography`
 
@@ -569,18 +571,17 @@ The closing of this training is with two items: table of contents and abstract.
 To create a [table of contents](https://www.overleaf.com/learn/latex/Table_of_contents) is very simple, just add the command at the place you want to create your table of contents. In general it will after the command `maketitle`
 
 ```LaTeX
-
-To add a table of contents, just add the command 
-
+%
+% Add where the table of contents should be placed.
+%
 \tableofcontents
-
 ```
 
-Finally the abstract, as a good practice is the last thing we write. The abstract has it's own environment.
+[You can also add list of figures and tables](https://www.overleaf.com/learn/latex/Lists_of_tables_and_figures).
+
+Finally the abstract, as a good practice is the last thing we write. The abstract has it's own environment. Adding an abstract to our article. 
 
 ```LaTeX
-
-Adding an abstract to our article. 
 
 \begin{abstract}
     In this brief \LaTeX{} training we covered a lot. We presented the basic elements of an article, lists, tables, equations, etc. On the Github page, we added references to Overleaf documentation so you can explore more in depth material. Finally, \LaTeX{} is a very well established, so you will have no problem finding how to do all sorts of things. As Alan Kay said ``Simple things should be simple, complex things should be possible.'' That is definitely true for Overleaf and \LaTeX{}.
