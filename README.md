@@ -124,7 +124,7 @@ This section has some very important results. In this section we find the answer
 Using the results from Sec.~(\ref{S:very_important}) we now can say for sure that the number ``42'' is the answer for ultimate questions of life, universe, and everything.
 ```
 
-### Bold, italics and underlining
+### Fonts
 
 To emphasize text in LaTeX use the formatting commands: `\textbf{...}`, `\textit{...}`, and `\underline{...}.` Add the following text to your article
 
@@ -133,18 +133,29 @@ To emphasize text in LaTeX use the formatting commands: `\textbf{...}`, `\textit
 \section{Text Formatting}
 
 This text is in \textbf{bold}, and this is in \textit{italic}, and this one has \underline{underline.}
-
 ```
 
-A better approach is to use the `\emph{...}` command. Better in the sense, that it's up to rendering device to choose how to emphasize the text, for example a reader device for sight impaired person. In general `\emph{...}` will render the text in italic.
+A general example of the fonts available in LaTex is
 
-Try on your text
+```LaTeX
+\begin{tabular}{l p{0.6\linewidth} }
+    \textbf{Specifier} &  \textbf{Switches To}\\ \hline
+    \verb|\textnormal{}|  & normal document text\\
+    \verb|\emph{}| & \emph{emphasis}\\
+    \verb|\texttt{}| & \texttt{Typewriter style font family}\\
+    \verb|\textit{}| & \textit{italic text}\\
+    \verb|\textbf{}| & \textbf{bold text}\\
+    \verb|\textrm{}| & \textrm{Roman font family}\\
+    \verb|\textsf{}| & \textsf{Sans-serif font family}\\         
+\end{tabular}
+```
+
+
+Try to put emphasis on text that is already emphasized.
 
 ```LaTeX
 \emph{This text is emphasized, and \emph{we put emphasis inside} a block that is already emphasized!}
 ```
-
-Note that we put emphasis on text that is already emphasized.
 
 ## Lists
 
