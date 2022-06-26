@@ -349,7 +349,7 @@ The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calcu
 ```
 Note that we can use the `\ref{}` command like we did for pictures to reference the equations by the label.
 
-There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc.
+There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. Finally there is [the great big list of LaTeX symbols](http://mirrors.ctan.org/info/symbols/comprehensive/symbols-a4.pdf) with 400(!) pages of symbols.
 
 ### Aligning Equations
 
