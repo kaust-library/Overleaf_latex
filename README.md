@@ -235,6 +235,10 @@ Add the package `graphics` to the preamble, and set the path to the images
 add the picture to the document
 
 ```LaTeX
+\section{Images}
+
+Now we are going to add pictures to the document
+
 \includegraphics[width=0.6\textwidth]{bombetoka_aster_23aug00_lrg.jpg}
 ```
 
