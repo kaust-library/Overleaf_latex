@@ -309,11 +309,23 @@ Add a new file to your project, and give it a name, something like `equations.te
 
 ![Add file to project](img/overleaf_add_file.png)
 
+Before starting to work with equations, add these 2 packages
+
+```LaTeX
+\usepackage{amssymb,amsmath}
+```
+
+> *Note*
+> You can add packages one line per package, or add several packages in one line.
+
+
 On the main document, `main.tex`, add the command to include the new file
 
 ```LaTeX
 %
 % Include file. Just text, no preamble part. 
+\section{Equations}
+
 \input{equations.tex}
 ```
 
