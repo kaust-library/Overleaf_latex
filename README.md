@@ -239,6 +239,8 @@ def home():
 
 ## Images
 
+### Adding Image to Overleaf
+
 To add [images to a LaTeX document](https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf) in Overleaf, it's necessary to upload them first. It's recommended to create a folder for the images so they are separated from the regular documents.
 
 ![Create folder](img/overleaf_create_folder.png)
@@ -249,7 +251,7 @@ Next upload the picture
 
 ![Upload picture](img/overleaf_upload_picture.png)
 
-Add the package `graphics` to the preamble, and set the path to the images
+Add the package `graphics` to the preamble, and set the path to the images, although this not strictly necessary because Overleaf will suggest the full path to the picture.
 
 ```LaTeX
 \usepackage{graphicx}
