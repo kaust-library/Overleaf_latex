@@ -150,6 +150,10 @@ A general example of the fonts available in LaTex is
 \end{tabular}
 ```
 
+This table will produce a output similar to this
+
+![LaTeX fonts](img/LaTeX_fonts.png)
+
 Try to put emphasis on text that is already emphasized.
 
 ```LaTeX
@@ -214,7 +218,7 @@ Now we present the ``description'' list:
 
 ### Typing Code
 
-To type a piece of code, like Python, on your text, you can use the [`fancyvrb` package](https://ctan.um.ac.ir/macros/latex/contrib/fancyvrb/doc/fancyvrb-doc.pdf). 
+To type a piece of code, like Python, on your text, you can use the [`fancyvrb` package](https://ctan.um.ac.ir/macros/latex/contrib/fancyvrb/doc/fancyvrb-doc.pdf)(pdf). 
 
 First add the package as usual
 
@@ -222,7 +226,7 @@ First add the package as usual
 \usepackage{fancyvrb}    % Add the package
 ```
 
-Then add the piece of code
+Then add the piece of code to your LaTeX document:
 
 ```LaTeX
 (...)
@@ -340,7 +344,7 @@ Before starting to work with equations, add these 2 packages
 ```
 
 > *Note*
-> You can add packages one line per package, or add several packages in one line.
+> You can add packages one line per package, or add several packages in one line. This is a personal choice. 
 
 On the main document, `main.tex`, add the command to include the new file
 
