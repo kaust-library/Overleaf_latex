@@ -359,8 +359,6 @@ On the main document, `main.tex`, add the command to include the new file
 Now start adding text to `equations.tex` file
 
 ```LaTeX
-\section{Equations}
-
 Here we present what is probably the strongest points of \LaTeX{}: mathematical typesetting. 
 
 \subsection{Simple Maths}
