@@ -241,6 +241,33 @@ def home():
 \end{Verbatim}
 ```
 
+### Big Projects
+
+When working on big documents, that is, a [large projects](https://www.overleaf.com/learn/latex/Management_in_a_large_project), you might want to split the input file into several parts. LaTeX offers two ways to include files: `input` and `include`. The [difference is subtle](https://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include). 
+
+The `input` command simply will insert the external file just like if you have typed, and you can have nested `input` files, that is, an `input` inside another `input`ed file. The syntax is:
+
+```LaTeX
+input{filename}
+```
+
+The syntax for the `include` command is very similar
+
+```LaTeX
+include{filename}
+```
+
+As discussed in the difference between the commands, the content of `include` will start in a new page, if this behaviour is not desireable, then one must use the `input` command instead. But on the other hand, `include` can be used with `includeonly` with can be handy in really big projects, because, as the name suggests, will include only selected files into the main document.
+
+To use `includeonly`, add it to the _preamble_ of the document
+
+```LaTeX
+includeonly{filename1, filename2, ...}
+```
+
+and only those files will be included in the main document.
+
+
 ## Images
 
 ### Adding Image to Overleaf
@@ -331,7 +358,7 @@ Try to swap the pictures see if the reference to the pictures changes.
 
 ## Equations
 
-Probably the strongest point of LaTeX is the typesetting of mathematics. We are going to introduce a important technique to work on [large projects](https://www.overleaf.com/learn/latex/Management_in_a_large_project): inputing another file into the main project. LaTeX offers two ways to include files: `input` and `include`. The [difference is subtle](https://tex.stackexchange.com/questions/246/when-should-i-use-input-vs-include). The `input` command simply will insert the external file just like if you have typed, and you can next multple `input` files. The `include` command makes easier for big projects because it can be used with the `includeonly` command, to just compile specific parts of the document, but you can't nest `include` commands. 
+Probably the strongest point of LaTeX is the typesetting of mathematics. 
 
 Add a new file to your project, and give it a name, something like `equations.tex`
 
