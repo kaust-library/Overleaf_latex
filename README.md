@@ -350,7 +350,9 @@ On the main document, `main.tex`, add the command to include the new file
 
 ```LaTeX
 %
-% Include file. Just text, no preamble part. 
+% Include file. Just text, no preamble part, but we keep the heading ("section") here to make easier to read the main document.
+\section{Equations}
+
 \input{equations.tex}
 ```
 
