@@ -12,7 +12,7 @@ Next use the option to "Log in through your institution" to login using your KAU
 
 <img src="img/overleaf_login_institution.png" alt="Login via institution" width="600"/>
 
-## New Article
+## Text
 
 ### Latex Document Structure
 
@@ -150,6 +150,9 @@ A general example of the fonts available in LaTex is
 \end{tabular}
 ```
 
+This table will produce a output similar to this
+
+![LaTeX fonts](img/LaTeX_fonts.png)
 
 Try to put emphasis on text that is already emphasized.
 
@@ -157,7 +160,7 @@ Try to put emphasis on text that is already emphasized.
 \emph{This text is emphasized, and \emph{we put emphasis inside} a block that is already emphasized!}
 ```
 
-## Lists
+### Lists
 
 LaTeX has 3 kinds of lists: bullet, numbered and description. A list is defined as parameter for the environment `\begin` and `\end`. Let's start by creating a section for our lists
 
@@ -198,7 +201,6 @@ Of course you can combine the two types:
     \item Mix all ingredients in a bowl
     \item Put in the oven.
 \end{enumerate}
-
 ```
 
 To finish, the description list
@@ -214,7 +216,34 @@ Now we present the ``description'' list:
 
 [Lists have a lots of options](https://www.overleaf.com/learn/latex/Lists), like changing the bullet or numbering style. 
 
+### Typing Code
+
+To type a piece of code, like Python, on your text, you can use the [`fancyvrb` package](https://ctan.um.ac.ir/macros/latex/contrib/fancyvrb/doc/fancyvrb-doc.pdf)(pdf). 
+
+First add the package as usual
+
+```LaTeX
+\usepackage{fancyvrb}    % Add the package
+```
+
+Then add the piece of code to your LaTeX document:
+
+```LaTeX
+(...)
+% The parameters are optional for the font size and family, and add line numbers
+% on the left side, and frame above and below the code.
+\begin{Verbatim}[fontsize=\small, fontfamily=courier, numbers=left, frame=lines]
+from flask import Flask
+app = Flask(__name__)
+@app.route('/')
+def home():
+    return 'Flask with docker!'
+\end{Verbatim}
+```
+
 ## Images
+
+### Adding Image to Overleaf
 
 To add [images to a LaTeX document](https://www.overleaf.com/learn/how-to/Including_images_on_Overleaf) in Overleaf, it's necessary to upload them first. It's recommended to create a folder for the images so they are separated from the regular documents.
 
@@ -226,7 +255,7 @@ Next upload the picture
 
 ![Upload picture](img/overleaf_upload_picture.png)
 
-Add the package `graphics` to the preamble, and set the path to the images
+Add the package `graphics` to the preamble, and set the path to the images, although this not strictly necessary because Overleaf will suggest the full path to the picture.
 
 ```LaTeX
 \usepackage{graphicx}
@@ -298,7 +327,6 @@ In Fig.~(\ref{fig:Susquehanna_River}) we see the Susquehanna River cutting throu
 
 You reference your pictures using the command `\ref{}`, with the label that you defined inside the `picture` environment.
 
-
 Try to swap the pictures see if the reference to the pictures changes.
 
 ## Equations
@@ -316,7 +344,7 @@ Before starting to work with equations, add these 2 packages
 ```
 
 > *Note*
-> You can add packages one line per package, or add several packages in one line.
+> You can add packages one line per package, or add several packages in one line. This is a personal choice. 
 
 On the main document, `main.tex`, add the command to include the new file
 
@@ -338,7 +366,6 @@ Here we present what is probably the strongest points of \LaTeX{}: mathematical 
 In this document we will add equations, and other mathematics stuff. We start with the \emph{in line} mode,  where the equation is directly on the text. 
 
 The very famous Einstein's equation is $E = mc^2$, where $m$ is the mass of the object, and $c$ is the speed of light in the vacuum. You put something a little more interesting in the in line equation, like an integral: $\int \zeta^{2}(x) \, dx$, or a simple fraction: $\frac{1}{x + y}$. 
-
 ```
 
 But like figures, if the equation is more complex, it's a good idea to put inside an _equation_ environment. Let's see some examples:
@@ -406,31 +433,6 @@ Dislaying a long equation
     p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
          - 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
 \end{multline}
-```
-
-## Typing Code
-
-To type a piece of code, like Python, on your text, you can use the [`fancyvrb` package](https://ctan.um.ac.ir/macros/latex/contrib/fancyvrb/doc/fancyvrb-doc.pdf). 
-
-First add the package as usual
-
-```LaTeX
-\usepackage{fancyvrb}    % Add the package
-```
-
-Then add the piece of code
-
-```LaTeX
-(...)
-% The parameters are optional for the font size and family, and add line numbers
-% on the left side, and frame above and below the code.
-\begin{Verbatim}[fontsize=\small, fontfamily=courier, numbers=left, frame=lines]
-from flask import Flask
-app = Flask(__name__)
-@app.route('/')
-def home():
-    return 'Flask with docker!'
-\end{Verbatim}
 ```
 
 ## Tables
@@ -593,4 +595,3 @@ Finally the abstract, as a good practice is the last thing we write. The abstrac
     In this brief \LaTeX{} training we covered a lot. We presented the basic elements of an article, lists, tables, equations, etc. On the Github page, we added references to Overleaf documentation so you can explore more in depth material. Finally, \LaTeX{} is a very well established, so you will have no problem finding how to do all sorts of things. As Alan Kay said ``Simple things should be simple, complex things should be possible.'' That is definitely true for Overleaf and \LaTeX{}.
 \end{abstract}
 ```
-
