@@ -384,6 +384,10 @@ Note that we can use the `\ref{}` command like we did for pictures to reference 
 
 There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. 
 
+Overleaf (premium) offers a symbol palette that can be helful in the beginning until one memorize the symbols, like Greek letters, that are frequently used
+
+![Symbol Palette](img/overleaf_symbol_palette.png)
+
 ### Aligning Equations
 
 In case presenting how to solve an equation, we would like to beautifuly displayed, like aligning at the equal sign. Or in case of long formulas, it can be necessary to split it in multiple lines. Make sure already have imported the package `amsmath` in your main document.
