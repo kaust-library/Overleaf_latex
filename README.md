@@ -85,9 +85,9 @@ Then edit the authors with their affiliation
 ```LaTeX
 \author[1]{Athos}
 \author[2]{Aramis}
-\author[1]{Porthos}
-\affil[1]{Dumas School}
-\affil[2]{Musketeers Institute}
+\author[1,2]{Porthos}
+\affil[1]{Alexandre Dumas School of Literature}
+\affil[2]{Musketeers Institute of Classical Studies}
 ```
 
 Try for yourself by compiling the text.
