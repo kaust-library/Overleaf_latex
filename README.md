@@ -366,15 +366,6 @@ Add a new file to your project, and give it a name, something like `equations.te
 
 ![Add file to project](img/overleaf_add_file.png)
 
-Before starting to work with equations, add these 2 packages
-
-```LaTeX
-\usepackage{amssymb,amsmath}
-```
-
-> *Note*
-> You can add packages one line per package, or add several packages in one line. This is a personal choice. 
-
 On the main document, `main.tex`, add the command to include the new file
 
 ```LaTeX
@@ -386,6 +377,15 @@ On the main document, `main.tex`, add the command to include the new file
 ```
 
 ### Adding Math the File
+
+Before starting to work with equations, add these 2 packages to your preamble
+
+```LaTeX
+\usepackage{amssymb,amsmath}
+```
+
+> *Note*
+> You can add packages one line per package, or add several packages in one line. This is a personal choice. 
 
 Now start adding text to `equations.tex` file
 
@@ -399,8 +399,31 @@ In this document we will add equations, and other mathematical stuff. We start w
 The very famous Einstein's equation is $E = mc^2$, where $m$ is the mass of the object, and $c$ is the speed of light in the vacuum. You put something a little more interesting in the in line equation, like an integral: $\int \zeta^{2}(x) \, dx$, or a simple fraction: $\frac{1}{x + y}$. 
 ```
 
-LaTeX has a second math environment, the _displayed_. As the name implies, it displays math, and it's better than the _inline_ environment for bigger equations. 
-But like figures, if the equation is more complex, it's a good idea to put inside an _equation_ environment. Let's see some examples:
+LaTeX has a second math environment, the _displayed_. As the name implies, it displays math, and it's better than the _inline_ environment for bigger equations. You can use the _displayed_ environment with the command `displaymath`:
+
+```LaTeX
+Using the \emph{displaymath} environment
+
+\begin{displaymath}
+    \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+\end{displaymath}
+
+The \emph{displaymath} environment is so common that it has a shortcut \verb|\[| and \verb|\]|. Using the shortcut to rewrite the equation above, we should get the same result
+
+\[
+    \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+\]
+```
+
+Equations are just like the _displayed_ environment above, with the exception that get a number associated with them. Equations are typed in the _equation_ environment. Continuing with the example above, but using the equation environment we have
+
+```LaTeX
+\begin{equation}
+    \int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}
+\end{equation}
+```
+
+Equations have an extra feature that is very important: equations can be lableled, and referenced later. Let's see an example:
 
 ```LaTeX
 Consider the following equation
@@ -412,7 +435,7 @@ Consider the following equation
 
 The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calculus}.
 ```
-Note that we can use the `\ref{}` command like we did for pictures to reference the equations by the label.
+With `label` can give a name to our equation, and reference it later with `ref`. Note that the `E:` in the label, is just a convention, and not required. The convention in naming is just to make life easier for the author: `E` for equation, `T` for table, `F` for figure, and so on. 
 
 There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. 
 
