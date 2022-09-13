@@ -360,6 +360,8 @@ Try to swap the pictures see if the reference to the pictures changes.
 
 Probably the strongest point of LaTeX is the typesetting of mathematics. 
 
+### Adding a File to the Project
+
 Add a new file to your project, and give it a name, something like `equations.tex`
 
 ![Add file to project](img/overleaf_add_file.png)
@@ -383,6 +385,8 @@ On the main document, `main.tex`, add the command to include the new file
 \input{equations.tex}
 ```
 
+### Adding Math the File
+
 Now start adding text to `equations.tex` file
 
 ```LaTeX
@@ -390,11 +394,12 @@ Here we present what is probably the strongest points of \LaTeX{}: mathematical 
 
 \subsection{Simple Maths}
 
-In this document we will add equations, and other mathematics stuff. We start with the \emph{in line} mode,  where the equation is directly on the text. 
+In this document we will add equations, and other mathematical stuff. We start with the \emph{inline} mode,  where the equation is directly on the text. 
 
 The very famous Einstein's equation is $E = mc^2$, where $m$ is the mass of the object, and $c$ is the speed of light in the vacuum. You put something a little more interesting in the in line equation, like an integral: $\int \zeta^{2}(x) \, dx$, or a simple fraction: $\frac{1}{x + y}$. 
 ```
 
+LaTeX has a second math environment, the _displayed_. As the name implies, it displays math, and it's better than the _inline_ environment for bigger equations. 
 But like figures, if the equation is more complex, it's a good idea to put inside an _equation_ environment. Let's see some examples:
 
 ```LaTeX
