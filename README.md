@@ -423,7 +423,7 @@ Equations are just like the _displayed_ environment above, with the exception th
 \end{equation}
 ```
 
-Equations have an extra feature that is very important: equations can be lableled, and referenced later. Let's see an example:
+Equations have an extra feature that is very important: equations can be lableled, and referenced later. Just like figures. Let's see an example:
 
 ```LaTeX
 Consider the following equation
@@ -475,7 +475,7 @@ You will see that the equation is aligned by the equal sign. If you prefer to om
 \end{equation*}
 ```
 
-But keep in mind that this will not reset the counter, and following equations will count will have a "gap" in the numbering, which can be confusing. If you just want to present an piece of math, use the `\[...\]`
+But keep in mind that this will not reset the counter, and following equations will count will have a "gap" in the numbering, which can be confusing. If you just want to present an piece of math, use the _displayed_ environment, `\[...\]`
 
 ```LaTeX
 \[
