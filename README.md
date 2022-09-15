@@ -437,13 +437,73 @@ The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calcu
 ```
 With `label` can give a name to our equation, and reference it later with `ref`. Note that the `E:` in the label, is just a convention, and not required. The convention in naming is just to make life easier for the author: `E` for equation, `T` for table, `F` for figure, and so on. 
 
+#### Boxed Formulas
+
+Putting a box around your formula
+
+```LaTeX
+\subsubsection{Boxed Formula}
+
+The \verb|\boxed{}| commands put its argument in a box
+
+\[
+    \boxed{\int_{-\infty}^{\infty} e^{-x^2} \, dx = \sqrt{\pi}}
+\]
+```
+
+#### Tagging a Formula
+
+You can give a name instead to a formula, this way the name is shown instead of a number
+
+```LaTeX
+\subsubsection{Tagging a Formula}
+
+The \textsc{amsmath} allows to give a name to an equation with the \verb|\tag{}| command
+
+\begin{equation}
+F = G\frac{m_{1} m_{2}}{r^{2}}\tag{Newton}
+\label{E:NewtonGrav}
+\end{equation}
+
+The Eq.~(\ref{E:NewtonGrav}) shows that we can reference a tagged equation. 
+```
+
+
 There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. 
 
 Overleaf (premium) offers a symbol palette that can be helful in the beginning until one memorize the symbols, like Greek letters, that are frequently used
 
 ![Symbol Palette](img/overleaf_symbol_palette.png)
 
-### Aligning Equations
+### Multiline Math Display
+
+This section will deal with a common LaTeX problem of typesetting multiline math formula.
+
+#### Gathering Formulas
+
+The gathering environment groups multiple one-line formulas, each centered in one line
+
+```LaTeX
+
+\subsection{Gathering Formulas}
+
+The \emph{gathering} environment group several one-line formulas
+
+\begin{gather}
+x_{l} x_{2} + x_{1}~{2} x_{2}~{2} + x_{3},\label{E:mml.l}\\
+x_{l} x_{3} + x_{1}~{2} x_{3}~{2} + x_{2},\label{E:mml.2}\\
+x_{l} x_{2} x_{3}.\label{E:mml.3}
+\end{gather}
+
+Formulas (\ref{E:mml.l})-(\ref{E:mml.3}) are type as
+\begin{verbatim}
+\begin{gather}
+x_{l} x_{2} + x_{1}~{2} x_{2}~{2} + x_{3},\label{E:mml.l}\\
+x_{l} x_{3} + x_{1}~{2} x_{3}~{2} + x_{2},\label{E:mml.2}\\
+x_{l} x_{2} x_{3}.\label{E:mml.3}
+\end{gather}
+\end{verbatim}
+```
 
 In case presenting how to solve an equation, we would like to beautifuly displayed, like aligning at the equal sign. Or in case of long formulas, it can be necessary to split it in multiple lines. Make sure already have imported the package `amsmath` in your main document.
 
