@@ -200,6 +200,8 @@ Of course you can combine the two types:
     \end{itemize}
     \item Mix all ingredients in a bowl
     \item Put in the oven.
+    \item After 30 minutes, remove the cake from the oven.
+    \item Enjoy it.
 \end{enumerate}
 ```
 
@@ -229,7 +231,6 @@ First add the package as usual
 Then add the piece of code to your LaTeX document:
 
 ```LaTeX
-(...)
 % The parameters are optional for the font size and family, and add line numbers
 % on the left side, and frame above and below the code.
 \begin{Verbatim}[fontsize=\small, fontfamily=courier, numbers=left, frame=lines]
