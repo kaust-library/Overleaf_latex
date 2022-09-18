@@ -437,7 +437,7 @@ The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calcu
 ```
 With `label` can give a name to our equation, and reference it later with `ref`. Note that the `E:` in the label, is just a convention, and not required. The convention in naming is just to make life easier for the author: `E` for equation, `T` for table, `F` for figure, and so on. 
 
-#### Boxed Formulas
+### Boxed Formulas
 
 Putting a box around your formula
 
@@ -451,7 +451,7 @@ The \verb|\boxed{}| commands put its argument in a box
 \]
 ```
 
-#### Tagging a Formula
+### Tagging a Formula
 
 You can give a name instead to a formula, this way the name is shown instead of a number
 
@@ -468,7 +468,6 @@ F = G\frac{m_{1} m_{2}}{r^{2}}\tag{Newton}
 The Eq.~(\ref{E:NewtonGrav}) shows that we can reference a tagged equation. 
 ```
 
-
 There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. 
 
 Overleaf (premium) offers a symbol palette that can be helful in the beginning until one memorize the symbols, like Greek letters, that are frequently used
@@ -484,10 +483,9 @@ This section will deal with a common LaTeX problem of typesetting multiline math
 The gathering environment groups multiple one-line formulas, each centered in one line
 
 ```LaTeX
-
 \subsection{Gathering Formulas}
 
-The \emph{gathering} environment group several one-line formulas
+The \verb|gather| environment group several one-line formulas
 
 \begin{gather}
 x_{l} x_{2} + x_{1}~{2} x_{2}~{2} + x_{3},\label{E:mml.l}\\
@@ -505,7 +503,37 @@ x_{l} x_{2} x_{3}.\label{E:mml.3}
 \end{verbatim}
 ```
 
+If we want the group of equations to looks like more like of a single group like "Eq. (5)" for the whole group, and still be able to access individual equations, like "(5a)", then we can put the `gather` inside the `subequations` environment
+
+```LaTeX
+A better result can achieved by putting the \verb|gather| inside the \verb|subequations| environment
+
+\begin{verbatim}
+\begin{subequations}\label{E:gp}
+\begin{gather}
+x_{l} x_{2} + x_{1}~{2} x_{2}~{2} + x_{3},\label{E:gpl}\\
+x_{l} x_{3} + x_{1}~{2} x_{3}~{2} + x_{2},\label{E:gp2}\\
+x_{l} x_{2} x_{3},\label{E:gp3}
+\end{gather}
+\end{subequations}
+\end{verbatim}
+
+Which produces the following output
+
+\begin{subequations}\label{E:gp}
+\begin{gather}
+x_{l} x_{2} + x_{1}~{2} x_{2}~{2} + x_{3},\label{E:gpl}\\
+x_{l} x_{3} + x_{1}~{2} x_{3}~{2} + x_{2},\label{E:gp2}\\
+x_{l} x_{2} x_{3},\label{E:gp3}
+\end{gather}
+\end{subequations}
+
+Then with \verb|\eqref{E:gp}| you can reference the whole group as (\ref{E:gp}), while with \verb|\eqref{E:gp1}| will reference an individual equation, like Eq.~(\ref{E:gpl}).
+```
+
 In case presenting how to solve an equation, we would like to beautifuly displayed, like aligning at the equal sign. Or in case of long formulas, it can be necessary to split it in multiple lines. Make sure already have imported the package `amsmath` in your main document.
+
+#### Aligned Formulas
 
 Start a new subsection on your document
 
