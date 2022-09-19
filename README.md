@@ -629,9 +629,9 @@ Cases, like matrices, are also a subsidiary environment, that is, it has to be i
 \begin{displaymath}
     f(x)=
     \begin{cases}
-        -x^{2}, &\text{if $x < 0$;}\\
+        -x^{2},     &\text{if $x < 0$;}\\
         \alpha + x, &\text{if $0 \leq x \leq 1$;}\\
-        x^{2}, &\text{otherwise.}
+        x^{2},      &\text{otherwise.}
     \end{cases}
 \end{displaymath}
 ```
