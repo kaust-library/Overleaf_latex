@@ -434,13 +434,13 @@ Equations have an extra feature that is very important: equations can be lablele
 Consider the following equation
 
 \begin{equation}
-    \int_{a}^{b} f(x)dx = F(a) - F(b)
+    \int_{a}^{b} f(x) \: dx = F(a) - F(b)
     \label{E:CalcFundemental}
 \end{equation}
 
 The Eq.~(\ref{E:CalcFundemental}) is known as \emph{Fundamental Theorem of Calculus}.
 ```
-With `label` can give a name to our equation, and reference it later with `ref`. Note that the `E:` in the label, is just a convention, and not required. The convention in naming is just to make life easier for the author: `E` for equation, `T` for table, `F` for figure, and so on. 
+With `label` can give a name to our equation, and reference it later with `ref`. Note that the `E:` in the label, is just a convention, and not required. The convention in naming is just to make life easier for the author: `E` for equation, `T` for table, `F` for figure, and so on. Note the `\:` sequence to increse the [space](https://www.overleaf.com/learn/latex/Spacing_in_math_mode) between the _f(x)_ and the _dx_. 
 
 ### Boxed Formulas
 
