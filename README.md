@@ -682,22 +682,45 @@ Adding border to the table, and putting the table inside a proper `table` enviro
 
 \begin{table}[ht]
     \centering
-    \begin{tabular}{c|c|c}
+    \begin{tabular}{| c | c | c |}
+        \hline
         \textbf{Col 1}& \textbf{Col 2} & \textbf{Col 3} \\ \hline
-        cell1 & cell2 & cell3 \\ 
-        cell4 & cell5 & cell6 \\  
-        cell7 & cell8 & cell9     
+        cell1 & cell2 & cell3 \\ \hline
+        cell4 & cell5 & cell6 \\  \hline
+        cell7 & cell8 & cell9 \\ \hline
     \end{tabular}
     \caption{Table with lines}
     \label{T:tab1}
 \end{table}
 
-On Tab.~\ref{T:tab1} with have added a line between the header and the data.
+On Tab.~\ref{T:tab1} with have added a border.
+```
+
+Below is an example of a table with partial lines
+
+```LaTeX
+Within a tabular environment, \verb|&| jumps to the next column, \verb|\\| starts a new line and \verb|\hline| inserts a horizontal line. Add partial lines by using \verb|\cline{i-j}|, where $i$ and $j$ are the column numbers the line should extend over. See Tab.~(\ref{T:part_lines}).
+
+\begin{table}[ht]
+    \centering
+    \begin{tabular}{|r|l|}
+        \hline
+        7C0 & hexadecimal \\
+        3700 & octal \\ \cline{2-2}
+        11111000000 & binary \\
+        \hline \hline
+        1984 & decimal \\
+        \hline
+    \end{tabular}
+    \caption{Table with partial lines}
+    \label{T:part_lines}
+\end{table}
+
 ```
 
 Next we consider a table with text. Try the following example
 
-```LaTex
+```LaTeX
 What about tables with text? Do they need any change or not? Let's see what happen when we try a naive approach
 
 \begin{table}[ht]
