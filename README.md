@@ -696,7 +696,7 @@ Adding border to the table, and putting the table inside a proper `table` enviro
 On Tab.~\ref{T:tab1} with have added a border.
 ```
 
-Below is an example of a table with partial lines
+Below is an example of a table with partial lines using `cline`
 
 ```LaTeX
 Within a tabular environment, \verb|&| jumps to the next column, \verb|\\| starts a new line and \verb|\hline| inserts a horizontal line. Add partial lines by using \verb|\cline{i-j}|, where $i$ and $j$ are the column numbers the line should extend over. See Tab.~(\ref{T:part_lines}).
@@ -715,7 +715,6 @@ Within a tabular environment, \verb|&| jumps to the next column, \verb|\\| start
     \caption{Table with partial lines}
     \label{T:part_lines}
 \end{table}
-
 ```
 
 Next we consider a table with text. Try the following example
