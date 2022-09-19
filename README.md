@@ -371,6 +371,15 @@ Add a new file to your project, and give it a name, something like `equations.te
 
 ![Add file to project](img/overleaf_add_file.png)
 
+Before starting to work with equations, add these 2 packages to your preamble
+
+```LaTeX
+\usepackage{amssymb,amsmath}
+```
+
+> *Note*
+> You can add packages one line per package, or add several packages in one line. This is a personal choice. 
+
 On the main document, `main.tex`, add the command to include the new file
 
 ```LaTeX
@@ -382,15 +391,6 @@ On the main document, `main.tex`, add the command to include the new file
 ```
 
 ### Adding Math the File
-
-Before starting to work with equations, add these 2 packages to your preamble
-
-```LaTeX
-\usepackage{amssymb,amsmath}
-```
-
-> *Note*
-> You can add packages one line per package, or add several packages in one line. This is a personal choice. 
 
 Now start adding text to `equations.tex` file
 
