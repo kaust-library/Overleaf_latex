@@ -684,7 +684,7 @@ Creating a simple table in \LaTeX{} with 3 columns centered
 Next we will add borders to the table. To add boder at the columns, change the `table spec` to `\begin{tabular}{ c | c | c }`. Horizontal lines with `hline`. Add border to previous table
 
 ```LaTeX
-Adding border to the table Tab.~\ref{T:tab1}, and putting the table inside a proper `table` environment
+Adding border to the table~\ref{T:tab1}, and putting the table inside a proper ``table'' environment
 
 \begin{table}[ht]
     \centering
