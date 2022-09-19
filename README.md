@@ -738,7 +738,7 @@ We can see that simply putting text on the table didn't work. So how fix this? T
 The possible options for the placement are presented on the following table. Note we are setting the size of the column with text
 
 ```LaTeX
-Next are placement options for the floating environment (like pictures and tables) in \LaTeX{}
+On Tab~.(\ref{T:PosPlace}) are placement options for the floating environment (like pictures and tables) in \LaTeX{}. 
 
 \begin{table}[ht]
     \centering
