@@ -595,7 +595,7 @@ Matrices in LaTeX are provided by the `amsmath` package. By default, there are n
 ```LaTeX
 \subsection{Matrices}
 
-The \textsc{amsmath} package provides the \verb|matrix| environment. The \verb|matrix| is a subsidiary environment, that means, it needs to be inside other mathematical environment, like \verb|equation| or \verb|displaymath|.
+The \textsf{amsmath} package provides the \verb|matrix| environment. The \verb|matrix| is a subsidiary environment, that means, it needs to be inside other mathematical environment, like \verb|equation| or \verb|displaymath|.
 
 \begin{displaymath}
     \begin{matrix}
@@ -644,9 +644,11 @@ Cases, like matrices, are also a subsidiary environment, that is, it has to be i
 
 Typing a big formula requires some planing, and we will show how to type one using one example.
 
-First add new folder to your project, and in that folder, add a document called `big_formula.tex`. To add a folder, follow the steps used when [adding  pictures](https://github.com/kaust-library/overleaf#adding-image-to-overleaf).
+First add new folder named `examples` to your project, and in that folder, add a document called `big_formula.tex`. To add a folder, follow the steps used when [adding  pictures](https://github.com/kaust-library/overleaf#adding-image-to-overleaf).
 
-In your new file add the following line, and compile your document.
+If cloned the Github repository, you will find the file in the same folder as above, `examples`. If you not using the repository, you can still copy the content of file using the option `Raw` on Github.
+
+In `equations.tex` file add the following line, and compile your document.
 
 ```LaTeX
 \input{examples/big_formula}
@@ -671,18 +673,18 @@ The `table spec` are the number of columns, and the alignment of the text: `l` f
 Creating a simple table in \LaTeX{} with 3 columns centered
 
 \begin{center}
-\begin{tabular}{ c c c }
- cell1 & cell2 & cell3 \\ 
- cell4 & cell5 & cell6 \\  
- cell7 & cell8 & cell9    
-\end{tabular}
+    \begin{tabular}{ c c c }
+         cell1 & cell2 & cell3 \\ 
+         cell4 & cell5 & cell6 \\  
+         cell7 & cell8 & cell9    
+    \end{tabular}
 \end{center}
 ```
 
 Next we will add borders to the table. To add boder at the columns, change the `table spec` to `\begin{tabular}{ c | c | c }`. Horizontal lines with `hline`. Add border to previous table
 
 ```LaTeX
-Adding border to the table, and putting the table inside a proper `table` environment
+Adding border to the table Tab.~\ref{T:tab1}, and putting the table inside a proper `table` environment
 
 \begin{table}[ht]
     \centering
@@ -696,8 +698,6 @@ Adding border to the table, and putting the table inside a proper `table` enviro
     \caption{Table with lines}
     \label{T:tab1}
 \end{table}
-
-On Tab.~\ref{T:tab1} with have added a border.
 ```
 
 Below is an example of a table with partial lines using `cline`
