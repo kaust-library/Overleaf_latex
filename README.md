@@ -584,6 +584,20 @@ To illustrate the second point, here is an example of \verb|split| within an \ve
 \end{align}
 ```
 
+### Typing a Big Formula
+
+Typing a big formula requires some planing, and we will show how to type one using one example.
+
+First add new folder to your project, and in that folder, add a document called `big_formula.tex`. To add a folder, follow the steps used when [adding  pictures](https://github.com/kaust-library/overleaf#adding-image-to-overleaf).
+
+In your new file add the following line, and compile your document.
+
+```LaTeX
+\input{examples/big_formula}
+```
+
+This is the last step using the `equation.tex.` Now we will continue with our main document, `main.tex.`
+
 ## Tables
 
 Table in LaTeX are provided by the _tabular_ environment. The general format of the is
