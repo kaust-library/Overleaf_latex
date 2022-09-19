@@ -616,6 +616,26 @@ The \textsc{amsmath} package provides the \verb|matrix| environment. The \verb|m
 
 Besides \verb|matrix|, \verb|pmatrix|, the other matrices environment include \verb|bmatrix|, \verb|Bmatrix|, \verb|vmatrix|, and \verb|Vmatrix|. 
 ```
+
+#### Cases
+
+As last example, we look at `cases` another `amsmath` subsidiary environment
+
+```LaTeX
+\subsection{Cases}
+
+Cases, like matrices, are also a subsidiary environment, that is, it has to be inside another mathematical environment. An example of \verb|cases| would be something like
+
+\begin{displaymath}
+    f(x)=
+    \begin{cases}
+        -x^{2}, &\text{if $x < 0$;}\\
+        \alpha + x, &\text{if $0 \leq x \leq 1$;}\\
+        x^{2}, &\text{otherwise.}
+    \end{cases}
+\end{displaymath}
+```
+
 ### Typing a Big Formula
 
 Typing a big formula requires some planing, and we will show how to type one using one example.
