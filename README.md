@@ -222,7 +222,7 @@ Now we present the ``description'' list:
 
 To type a piece of code, like Python, on your text, you can use the [`fancyvrb` package](https://ctan.um.ac.ir/macros/latex/contrib/fancyvrb/doc/fancyvrb-doc.pdf)(pdf). 
 
-First add the package as usual
+First add the package to your preamble as usual
 
 ```LaTeX
 \usepackage{fancyvrb}    % Add the package
@@ -534,53 +534,45 @@ Then with \verb|\eqref{E:gp}| you can reference the whole group as (\ref{E:gp}),
 
 In case presenting how to solve an equation, we would like to beautifuly displayed, like aligning at the equal sign. Or in case of long formulas, it can be necessary to split it in multiple lines. Make sure already have imported the package `amsmath` in your main document.
 
-#### Aligned Formulas
 
-Start a new subsection on your document
+#### Splitting Formulas
 
-```LaTeX
-\subsection{Aligning Equations}
-
-Aligning formulas and multi line equations.
-```
-
-Add the following equation to your `equations.tex` document, and compile it.
+For splitting very big formulas, LaTeX has the `split` environment. The biggest advantage of `split` is that outter mathemical environment understands the splitting assigning a single number for the multiline equation, and also understands the aligned character. To ilustrate these two points, consider the following examples
 
 ```LaTeX
-\begin{equation}
-\begin{split}
-A & = \frac{\pi r^2}{2} \\
- & = \frac{1}{2} \pi r^2
-\end{split}
-\label{eq1}
+\subsection{Splitting Equations}
+
+The \verb|split| math environment is to split a (long) formula into aligned parts. There are two major reasons to use split:
+
+\begin{itemize}
+    \item The math environment that contain it considers the \verb|split|  environment to be a single equation, so it generates only one number for it.
+    \item If the \verb|split| environment appears inside an \verb|align| environment, the alignment point of the \verb|split| environment is recognized by \verb|align| as is used in aligning all the formulas in the \verb|align| environement.
+\end{itemize}
+
+Consider the equation, despite the multiple lines, it's a single equation (point 1)
+
+\begin{equation}\label{E:mm7}
+    \begin{split}
+    (x_{1}x_{2}&x_{3}x_{4}x_{5}x_{6})^{2}\\
+               &+ (x_{1}x_{2}x_{3}x_{4}x_{5}
+                + x_{1}x_{3}x_{4}x_{5}x_{6}
+                + x_{1}x_{2}x_{4}x_{5}x_{6}
+                + x_{1}x_{2}x_{3}x_{5}x_{6})^{2}
+    \end{split}
 \end{equation}
-```
 
-You will see that the equation is aligned by the equal sign. If you prefer to omit the equation number, you can do it by adding an asterisk (*) after the equation (at the beginning and the end), like this
+To illustrate the second point, here is an example of \verb|split| within an \verb|align| environment. The \verb|align| understands the align character inside the \verb|split|
 
-```LaTeX
-\begin{equation*}
-(...)
-\end{equation*}
-```
-
-But keep in mind that this will not reset the counter, and following equations will count will have a "gap" in the numbering, which can be confusing. If you just want to present an piece of math, use the _displayed_ environment, `\[...\]`
-
-```LaTeX
-\[
-(...)
-\]
-```
-
-Displaying a long equation, the line break mark are the two backslash (`\\`)
-
-```LaTeX
-Dislaying a long equation
-
-\begin{multline}
-    p(x) = 3x^6 + 14x^5y + 590x^4y^2 + 19x^3y^3\\ 
-         - 12x^2y^4 - 12xy^5 + 2y^6 - a^3b^3
-\end{multline}
+\begin{align}\label{E:mm}
+    \begin{split}
+        f &= (x_{1}x_{2}x_{3}x_{4}x_{5}x_{6})^{2}\\
+          &= (x_{1}x_{2}x_{3}x_{4}x_{5}
+            + x_{1}x_{3}x_{4}x_{5}x_{6}
+            + x_{1}x_{2}x_{4}x_{5}x_{6}
+            + x_{1}x_{2}x_{3}x_{5}x_{6})^{2}
+    \end{split}\\
+        g &= y_{1} y_{2} y_{3}
+\end{align}
 ```
 
 ## Tables
