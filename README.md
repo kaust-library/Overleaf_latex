@@ -459,7 +459,7 @@ You can give a name instead to a formula, this way the name is shown instead of 
 ```LaTeX
 \subsubsection{Tagging a Formula}
 
-The \textsc{amsmath} allows to give a name to an equation with the \verb|\tag{}| command
+The \textsf{amsmath} allows to give a name to an equation with the \verb|\tag{}| command
 
 \begin{equation}
 F = G\frac{m_{1} m_{2}}{r^{2}}\tag{Newton}
@@ -584,6 +584,38 @@ To illustrate the second point, here is an example of \verb|split| within an \ve
 \end{align}
 ```
 
+### Matrices
+
+Matrices in LaTeX are provided by the `amsmath` package. By default, there are no delimiter to the matrix, like parenthesis. The [diferent delimiters](https://www.overleaf.com/learn/latex/Matrices) are diferent matrix commands, like `pmatrix` or `vmatrix`.
+
+```LaTeX
+\subsection{Matrices}
+
+The \textsc{amsmath} package provides the \verb|matrix| environment. The \verb|matrix| is a subsidiary environment, that means, it needs to be inside other mathematical environment, like \verb|equation| or \verb|displaymath|.
+
+\begin{displaymath}
+    \begin{matrix}
+    1 & 2 & 3\\
+    a & b & c
+    \end{matrix} 
+\end{displaymath}
+
+ Note that there are no parentheses, to have parentheses, use the \verb|pmatrix| instead. Here is a more complete example
+
+\begin{displaymath}
+    \mathbf{A} =
+    \begin{pmatrix}
+        a + b + c & uv\\
+        a + b & u + v
+    \end{pmatrix}
+    \begin{pmatrix}
+        30 & 7\\
+        3 & 17
+    \end{pmatrix}
+\end{displaymath}
+
+Besides \verb|matrix|, \verb|pmatrix|, the other matrices environment include \verb|bmatrix|, \verb|Bmatrix|, \verb|vmatrix|, and \verb|Vmatrix|. 
+```
 ### Typing a Big Formula
 
 Typing a big formula requires some planing, and we will show how to type one using one example.
