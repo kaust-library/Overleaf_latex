@@ -767,51 +767,61 @@ Overleaf has a very good [introduction to bibliography in LaTeX](https://www.ove
 1. Specify the file with the bibliography entries
 1. Add the command `\printbibliography`
 
-On our LaTeX document we would have something like this
+On our LaTeX document add the `biblatex` package with some options and the file with the references to the preamble, here the refences file is called `learn_latex.bib`
 
 ```LaTeX
 % In the preamble
-\usepackage{biblatex}
-\addbibresource{hello.bib}
-(...)
-% Your document
-(...)
-% At the very end
+\usepackage[
+backend=biber,
+style=alphabetic,
+sorting=ynt
+]{biblatex}
+\addbibresource{learn_latex.bib}
+```
+
+With the _alphabetic_ style, the bibliography will appear as `[Grä04]`, but if we change the style to _numeric_, the bibliography will appear as `[1]`. There are many other [customized styles](https://www.overleaf.com/learn/latex/Biblatex_citation_styles), like Nature, Science, IEEE, etc.
+
+Create the new file `learn_latex.bib` to your project. In that file, add your references 
+
+```LaTeX
+@book{mil2004,
+    title = {Math Into \LaTeX},
+    author = {George Gr\"atzer},
+    isbn = {978-0-8176-4131-3},
+    year = {2004},
+    publisher = {Birkh\"auser},
+    keywords = {Science}
+}
+@booklet{mil1995,
+    title = {Math Into \LaTeX{}, an introduction to LaTeX and AMS-LaTeX},
+    author = {George Gr\"atzer},
+    isbn = {0-8176-3805-9},
+    year = {1995},
+    publisher = {Birkh\"auser},
+    keywords = {Computerized typesetting}
+}
+@online{oet2021,
+    title = {The Not So Short Introduction to \LaTeX{}$\epsilon$},
+    author = {Tobias Oetiker and Hubert Partl and Irene Hyna and Elisabeth Schlegl},
+    year = {2021},
+    url = "https://tobi.oetiker.ch/lshort/lshort.pdf",
+    keywords = {Computerized typesetting},
+}```
+
+On your document, cite the references
+
+```LaTeX
+\section{References}
+The most important book for this training was \cite{mil2004}, which is really a deep dive into mathematics in \LaTeX{}. I really can't recommend it enough. Next is a booklet of the same book, \cite{mil1995}, which is a good sample of the main book. A gentle short introduction to \LaTeX{} is \cite{oet2021}. 
+```
+
+Finally, add the command to print the references
+
+```LaTeX
 \printbibliography
 ```
 
 The entries for your bibliography can be of [several kinds](https://www.overleaf.com/learn/latex/Bibliography_management_in_LaTeX#Reference_guide), like articles, books, thesis, online, and much more. We suggest to put as much as information as possible from the list of available fields, but keep in mind that the final bibliography will depend on the [_bibliography style_](https://www.overleaf.com/learn/latex/Biblatex_bibliography_styles). 
-
-A reference to a book will look like
-
-```LaTeX
-@book{dirac,
-    title = {The Principles of Quantum Mechanics},
-    author = {Paul Adrien Maurice Dirac},
-    isbn = {9780198520115},
-    series = {International series of monographs on physics},
-    year = {1981},
-    publisher = {Clarendon Press},
-    keywords = {physics}
-}
-```
-
-Then, on your text, to make a reference to the Dirac's book: 
-
-```LaTeX
-The book \cite{dirac} is one of the fundamental text of quantum mechanics. 
-```
-
-To finish this section, a note about the bibliography style. One can customize the bibliography together with the package import
-
-```LaTeX
-\usepackage[
-    style=alphabetic,
-    sorting=ynt,
-]{biblatex}
-```
-
-With the _alphabetic_ style, the bibliography will appear as `[Ein05]`, but if we change the style to _numeric_, the bibliography will appear as `[1]`. There are many other [customized styles](https://www.overleaf.com/learn/latex/Biblatex_citation_styles), like Nature, Science, IEEE, etc.
 
 ## Closing
 
