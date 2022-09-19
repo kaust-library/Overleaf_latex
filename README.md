@@ -803,16 +803,17 @@ Create the new file `learn_latex.bib` to your project. In that file, add your re
 @online{oet2021,
     title = {The Not So Short Introduction to \LaTeX{}$\epsilon$},
     author = {Tobias Oetiker and Hubert Partl and Irene Hyna and Elisabeth Schlegl},
-    year = {2021},
-    url = "https://tobi.oetiker.ch/lshort/lshort.pdf",
+    year = {2001},
+    url = {"https://tobi.oetiker.ch/lshort/lshort.pdf"},
     keywords = {Computerized typesetting},
-}```
+}
+```
 
 On your document, cite the references
 
 ```LaTeX
 \section{References}
-The most important book for this training was \cite{mil2004}, which is really a deep dive into mathematics in \LaTeX{}. I really can't recommend it enough. Next is a booklet of the same book, \cite{mil1995}, which is a good sample of the main book. A gentle short introduction to \LaTeX{} is \cite{oet2021}. 
+The most important book for this training was \cite{mil2004}, which is really a deep dive into mathematics in \LaTeX{}. I can't recommend this book enough. Next is a booklet of the same book, \cite{mil1995}, which is a good sample of the main book. A gentle short introduction to \LaTeX{} is \cite{oet2021}. 
 ```
 
 Finally, add the command to print the references
