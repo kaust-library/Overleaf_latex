@@ -471,10 +471,6 @@ The Eq.~(\ref{E:NewtonGrav}) shows that we can reference a tagged equation.
 
 There are many options available when working with mathematics in LaTeX: [mathematical expressions](https://www.overleaf.com/learn/latex/Mathematical_expressions), [brackets and parantheses](https://www.overleaf.com/learn/latex/Brackets_and_Parentheses), [Greek letters and other math symbols](https://www.overleaf.com/learn/latex/List_of_Greek_letters_and_math_symbols), etc. 
 
-Overleaf (premium) offers a symbol palette that can be helful in the beginning until one memorize the symbols, like Greek letters, that are frequently used
-
-![Symbol Palette](img/overleaf_symbol_palette.png)
-
 ### Multiline Math Display
 
 This section will deal with a common LaTeX problem of typesetting multiline math formula.
@@ -537,10 +533,23 @@ In case presenting how to solve an equation, we would like to beautifuly display
 
 #### Splitting Formulas
 
-For splitting very big formulas, LaTeX has the `split` environment. The biggest advantage of `split` is that outter mathemical environment understands the splitting assigning a single number for the multiline equation, and also understands the aligned character. To ilustrate these two points, consider the following examples
+To split a long formula or equation, LaTeX offers basically two options: `multline` and `split`. The first options, `multline` is very basic, and if possible, you should use the `split` environment instead. 
+
+The biggest advantage of `split` is that outter mathematical environment understands the splitting assigning a single number for the multiline equation, and also understands the aligned character. To ilustrate these two points, consider the following examples
 
 ```LaTeX
 \subsection{Splitting Equations}
+
+\LaTeX{} has a basic environment to split long formulas: \verb|multline|
+
+\begin{multline}
+    (x_{1}x_{2}x_{3}x_{4}x_{5}x_{6})^{2}\\
+               + (x_{1}x_{2}x_{3}x_{4}x_{5}\\
+                + x_{1}x_{3}x_{4}x_{5}x_{6}\\
+                + x_{1}x_{2}x_{4}x_{5}x_{6}\\
+                + x_{1}x_{2}x_{3}x_{5}x_{6})^{2}
+\end{multline}
+Note that the first line is set flush left, and the last one is set flush to right, and ones in the middle are centered. 
 
 The \verb|split| math environment is to split a (long) formula into aligned parts. There are two major reasons to use split:
 
@@ -554,10 +563,10 @@ Consider the equation, despite the multiple lines, it's a single equation (point
 \begin{equation}\label{E:mm7}
     \begin{split}
     (x_{1}x_{2}&x_{3}x_{4}x_{5}x_{6})^{2}\\
-               &+ (x_{1}x_{2}x_{3}x_{4}x_{5}
-                + x_{1}x_{3}x_{4}x_{5}x_{6}
-                + x_{1}x_{2}x_{4}x_{5}x_{6}
-                + x_{1}x_{2}x_{3}x_{5}x_{6})^{2}
+        &+ (x_{1}x_{2}x_{3}x_{4}x_{5}\\
+        &+ x_{1}x_{3}x_{4}x_{5}x_{6}\\
+        &+ x_{1}x_{2}x_{4}x_{5}x_{6}\\
+        &+ x_{1}x_{2}x_{3}x_{5}x_{6})^{2}
     \end{split}
 \end{equation}
 
