@@ -792,12 +792,12 @@ Create the new file `learn_latex.bib` to your project. In that file, add your re
     publisher = {Birkh\"auser},
     keywords = {Science}
 }
-@booklet{mil1995,
+@online{mil1996,
     title = {Math Into \LaTeX{}, an introduction to LaTeX and AMS-LaTeX},
     author = {George Gr\"atzer},
-    isbn = {0-8176-3805-9},
-    year = {1995},
+    year = {1996},
     publisher = {Birkh\"auser},
+    url = {"https://ctan.math.washington.edu/tex-archive/info/mil/mil.pdf"},
     keywords = {Computerized typesetting}
 }
 @online{oet2021,
