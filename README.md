@@ -361,6 +361,37 @@ You reference your pictures using the command `\ref{}`, with the label that you 
 
 Try to swap the pictures see if the reference to the pictures changes.
 
+### Subfigure
+
+The subfigure environment allows to build complex figures. First import the following packages
+
+```
+\usepackage{caption}
+\usepackage{subcaption}
+```
+
+But adding the figures themselves are very similar to process above, just use the `subfigure` environment inside the `figure,`  like this
+
+```LaTeX
+\begin{figure}
+    \centering
+    \begin{subfigure}[b]{0.495\textwidth}
+        \centering
+        \includegraphics[width=\textwidth]{img/graph_1.png}
+        \caption{Graph 1}
+        \label{F:graph_1}
+    \end{subfigure}
+    (...)
+    % Repete the code above for the other figure(s)
+    (...)
+    \end{subfigure}
+    \caption{Using ``subfigure'' environment}
+    \label{F:randomWalk}
+\end{figure}
+```
+
+Adjusting the size of the subfigues will require some patience, but it's a nice way to combine related graphs.
+
 ## Equations
 
 Probably the strongest point of LaTeX is the typesetting of mathematics. 
