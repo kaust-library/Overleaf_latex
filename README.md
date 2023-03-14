@@ -373,20 +373,25 @@ The subfigure environment allows to build complex figures. First import the foll
 But adding the figures themselves are very similar to process above, just use the `subfigure` environment inside the `figure,`  like this
 
 ```LaTeX
+We can combine pictures into ``one big picture'' using the \texttt{subfigure} environment. You can think as nesting pictures inside the \texttt{picture} environment. You can reference the ``big picture'' as the places of planet Earth in Pic~(\ref{fig:PlacesEarth}), or individual pictures, like the beautiful picture of Bombetoka Bay in Pic~(\ref{fig:pic_1}).
+
 \begin{figure}
     \centering
     \begin{subfigure}[b]{0.495\textwidth}
         \centering
-        \includegraphics[width=\textwidth]{img/graph_1.png}
-        \caption{Graph 1}
-        \label{F:graph_1}
+        \includegraphics[width=5cm, height=4cm]{bombetoka_aster_23aug00_lrg}
+        \caption{The Bombetoka Bay}
+        \label{fig:pic_1}
     \end{subfigure}
-    (...)
-    % Repete the code above for the other figure(s)
-    (...)
+    \hfill
+    \begin{subfigure}[b]{0.495\textwidth}
+        \centering
+        \includegraphics[width=5cm, height=4cm]{Susquehanna_River.jpg}
+        \caption{The Susquehanna River}
+        \label{fig:pic_2}
     \end{subfigure}
-    \caption{Using ``subfigure'' environment}
-    \label{F:randomWalk}
+    \caption{Pictures from the planet Earth}
+    \label{fig:PlacesEarth}
 \end{figure}
 ```
 
@@ -675,14 +680,12 @@ Cases, like matrices, are also a subsidiary environment, that is, it has to be i
 
 Typing a big formula requires some planing, and we will show how to type one using one example.
 
-First add new folder named `examples` to your project, and in that folder, add a document called `big_formula.tex`. To add a folder, follow the steps used when [adding  pictures](https://github.com/kaust-library/overleaf#adding-image-to-overleaf).
-
-If cloned the Github repository, you will find the file in the same folder as above, `examples`. If you not using the repository, you can still copy the content of file using the option `Raw` on Github.
+For the next example, add a new file, like we did for the `equations.tex`. If cloned the Github repository, you will find the file in the same folder as above, `examples`. If you not using the repository, you can still copy the content of file using the option `Raw` on Github.
 
 In `equations.tex` file add the following line, and compile your document.
 
 ```LaTeX
-\input{examples/big_formula}
+\input{big_formula}
 ```
 
 This is the last step using the `equation.tex.` Now we will continue with our main document, `main.tex.`
@@ -807,12 +810,12 @@ backend=biber,
 style=alphabetic,
 sorting=ynt
 ]{biblatex}
-\addbibresource{learn_latex.bib}
+\addbibresource{article_bib.bib}
 ```
 
 With the _alphabetic_ style, the bibliography will appear as `[Grä04]`, but if we change the style to _numeric_, the bibliography will appear as `[1]`. There are many other [customized styles](https://www.overleaf.com/learn/latex/Biblatex_citation_styles), like Nature, Science, IEEE, etc.
 
-Create the new file `learn_latex.bib` to your project. In that file, add your references 
+Create the new file `article_bib.bib` to your project. In that file, add your references 
 
 ```LaTeX
 @book{mil2004,
@@ -844,7 +847,7 @@ On your document, cite the references
 
 ```LaTeX
 \section{References}
-The most important book for this training was \cite{mil2004}, which is really a deep dive into mathematics in \LaTeX{}. I can't recommend this book enough. Next is a booklet of the same book, \cite{mil1995}, which is a good sample of the main book. A gentle short introduction to \LaTeX{} is \cite{oet2021}. 
+The most important book for this training was \cite{mil2004}, which is really a deep dive into mathematics in \LaTeX{}. I can't recommend this book enough. Next is a booklet of the same book, \cite{mil1996}, which is a good sample of the main book. A gentle short introduction to \LaTeX{} is \cite{oet2021}. 
 ```
 
 Finally, add the command to print the references
